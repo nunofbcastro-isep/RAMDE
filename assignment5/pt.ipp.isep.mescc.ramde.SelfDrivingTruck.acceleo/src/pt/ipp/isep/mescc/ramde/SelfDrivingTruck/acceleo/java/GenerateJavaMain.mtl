@@ -1,0 +1,94 @@
+[comment encoding = UTF-8 /]
+[module GenerateJavaMain('http://www.eclipse.org/papyrus/sysml/1.6/SysML', 'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks', 'http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::files::Query /]
+
+[template public GenerateJavaMain(st : StateMachine)]
+
+[let transitions: Sequence(Transition) = st.getAllNonInitialTransations()]
+[let events: Sequence(Event) = st.getAllEvents()]
+[let states: Sequence(State) = st.getAllStates()]
+[file (st.folderProjectName()+'/'+st.projectName()+'.java', false, 'UTF-8')]
+package org.jeasy.states.[st.projectName()/];
+
+import org.jeasy.states.api.FiniteStateMachine;
+import org.jeasy.states.api.FiniteStateMachineException;
+import org.jeasy.states.api.State;
+import org.jeasy.states.api.Transition;
+import org.jeasy.states.core.FiniteStateMachineBuilder;
+import org.jeasy.states.core.TransitionBuilder;
+[for (e: Event | events)]
+import org.jeasy.states.[st.projectName()/].events.[e.eventClassName()/];
+[/for]
+[for (t: Transition | transitions)]
+import org.jeasy.states.[st.projectName()/].handlers.[t.handlerClassName()/];
+[/for]
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class [st.projectName()/] {
+    public static void main(String['[]'/] args) throws FiniteStateMachineException {
+[for (s : State | states)]
+	State [s.stateVariavelName()/] = new State("[s.name/]");
+[/for]
+	
+	Set<State> states = new HashSet<>();
+[for (s : State | states)]
+	states.add([s.stateVariavelName()/]);
+[/for]
+
+[for (t: Transition | transitions)]
+	Transition [t.transationVariavelName()/] = new TransitionBuilder()
+            .name("[t.transationName()/]")
+            .sourceState([t.source.stateVariavelName()/])
+            .eventType([t.trigger.event.eventClassName()/].class)
+            .eventHandler(new [t.handlerClassName()/]())
+            .targetState([t.target.stateVariavelName()/])
+            .build();
+[/for]
+
+	FiniteStateMachine fsm = new FiniteStateMachineBuilder(states, [st.getInitialTransation().target.stateVariavelName()/])
+[for (t: Transition | transitions)]
+			.registerTransition([t.transationVariavelName()/])
+[/for]
+        	.build();
+
+		System.out.println("Current state: " + fsm.getCurrentState().getName());
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Instructions: Type the command corresponding to the desired event:");
+[for (e: Event | events)]
+        System.out.println("  - Type '[e.eventName()/]' to trigger the event '[e.name/]'.");
+[/for]
+
+		System.out.println("  - Type 'exit' to quit.");
+
+        while (true) {
+            String input = scanner.nextLine().trim().toLowerCase();
+            switch (input) {
+[for (e: Event | events)]
+				case "[e.eventName().toLowerCase().trim()/]":
+			        fsm.fire(new [e.eventClassName()/]());
+			        break;
+[/for]
+                case "exit":
+                    System.out.println("Exiting...");
+                    scanner.close(); // Close the scanner resource
+                    return;
+                default:
+                    System.out.println("Invalid command. Please type one of the commands listed or 'exit' to quit.");
+                    break;
+            }
+            System.out.println("Current state: " + fsm.getCurrentState().getName());
+        }
+
+    }
+}
+[/file]
+[/let]
+[/let]
+[/let]
+
+[/template]

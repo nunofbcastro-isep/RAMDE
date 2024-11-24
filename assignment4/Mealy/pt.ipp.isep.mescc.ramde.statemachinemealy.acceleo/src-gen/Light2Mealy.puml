@@ -1,0 +1,13 @@
+@startuml
+
+	title "Light 2 Mealy"
+
+	state "Light Off" as LightOffState
+	state "Light On" as LightOnState
+
+	[*] --> LightOffState
+	LightOffState --> LightOnState : event "On" / output "On"
+	LightOnState --> LightOffState : event "Off" / output "Off"
+	LightOnState --> LightOnState : event "On" / output "On"
+
+@enduml

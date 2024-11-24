@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pt.ipp.isep.mescc.ramde.statemachinemealy:MealyStateMachine
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:pt.ipp.isep.mescc.ramde.statemachinemealy="https://www.isep.ipp.pt/stateMachineMealy"
+    name="Turnstile Mealy">
+  <State name="Locked"
+      Outgoing="//@Transation.2 //@Transation.1"
+      Incoming="//@Transation.2 //@Transation.3"/>
+  <State name="Un-Locked"
+      Outgoing="//@Transation.3 //@Transation.4"
+      Incoming="//@Transation.1 //@Transation.0 //@Transation.4"/>
+  <Event name="Push"/>
+  <Event name="Coin"/>
+  <Transation
+      Source="//@Initial"
+      Target="//@State.1"/>
+  <Transation
+      outputAction="Un-Locked"
+      Source="//@State.0"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Transation
+      outputAction="Locked"
+      Source="//@State.0"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      outputAction="Locked"
+      Source="//@State.1"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      outputAction="Un-Locked"
+      Source="//@State.1"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Initial name="Initial"
+      Outgoing="//@Transation.0"/>
+</pt.ipp.isep.mescc.ramde.statemachinemealy:MealyStateMachine>

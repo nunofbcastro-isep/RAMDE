@@ -1,0 +1,120 @@
+[comment encoding = UTF-8 /]
+[module GenerateJavaTests('http://www.eclipse.org/papyrus/sysml/1.6/SysML', 'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks', 'http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::files::Query /]
+
+[template public GenerateJavaTests(st : StateMachine)]
+
+[let transitions: Sequence(Transition) = st.getAllNonInitialTransations()]
+[let initialTransation: Transition = st.getInitialTransation()]
+[let events: Sequence(Event) = st.getAllEvents()]
+[let states: Sequence(State) = st.getAllStates()]
+
+[file (st.folderTestsName()+'/'+st.classTestsName()+'.java', false, 'UTF-8')]
+package org.jeasy.states.[st.projectName()/];
+
+import org.jeasy.states.api.FiniteStateMachine;
+import org.jeasy.states.api.FiniteStateMachineException;
+import org.jeasy.states.api.State;
+import org.jeasy.states.api.Transition;
+import org.jeasy.states.core.FiniteStateMachineBuilder;
+import org.jeasy.states.core.TransitionBuilder;
+import org.junit.Test;
+import org.junit.Before;
+import java.util.HashSet;
+import java.util.Set;
+import static org.assertj.core.api.Assertions.assertThat;
+import static org.junit.Assert.assertEquals;
+
+[for (e: Event | events)]
+import org.jeasy.states.[st.projectName()/].events.[e.eventClassName()/];
+[/for]
+[for (t: Transition | transitions)]
+import org.jeasy.states.[st.projectName()/].handlers.[t.handlerClassName()/];
+[/for]
+
+public class [st.classTestsName()/] {
+[for (s : State | states)] 
+	private State [s.stateVariavelName()/];
+[/for]
+	private Set<State> states;
+
+[for (t: Transition | transitions)]
+	private Transition [t.transationVariavelName()/];
+[/for]
+
+	@Before
+    public void setUp() {
+[for (s : State | states)] 
+		[s.stateVariavelName()/] = new State("[s.name/]");
+[/for]
+
+		states = new HashSet<>();
+[for (s : State | states)]
+		states.add([s.stateVariavelName()/]);
+[/for]
+
+[for (t: Transition | transitions)]
+		[t.transationVariavelName()/] = new TransitionBuilder()
+            .name("[t.transationName()/]")
+            .sourceState([t.source.stateVariavelName()/])
+            .eventType([t.trigger.event.eventClassName()/].class)
+            .eventHandler(new [t.handlerClassName()/]())
+            .targetState([t.target.stateVariavelName()/])
+            .build();
+[/for]
+    }
+	
+	@Test
+    public void testRegisterTransition() {
+		FiniteStateMachine fsm = new FiniteStateMachineBuilder(states, [initialTransation.target.stateVariavelName()/])
+[for (t: Transition | transitions)]
+					.registerTransition([t.transationVariavelName()/])
+[/for]
+		        	.build();
+
+        assertThat(fsm.getTransitions()).contains(
+		[for (t: Transition | transitions)]
+			[t.transationVariavelName()/][if (t <> transitions->last())],[/if]
+		[/for]
+		);
+    }
+
+[for (t: Transition | transitions)]
+    @Test
+    public void testChangeTransition[t.transationVariavelName()/]()  throws FiniteStateMachineException {
+		FiniteStateMachine fsm = new FiniteStateMachineBuilder(states, [t.source.stateVariavelName()/])
+[for (t: Transition | transitions)]
+					.registerTransition([t.transationVariavelName()/])
+[/for]
+		        	.build();
+
+			fsm.fire(new [t.trigger.event.eventClassName()/]());
+
+        	assertEquals(fsm.getCurrentState(), [t.target.stateVariavelName()/]);
+    }
+
+[/for]
+    @Test
+    public void testChangeTransitionInvalid()  throws FiniteStateMachineException {
+		FiniteStateMachine fsm = new FiniteStateMachineBuilder(states, [initialTransation.target.stateVariavelName()/])
+[for (t: Transition | transitions)]
+					.registerTransition([t.transationVariavelName()/])
+[/for]
+		        	.build();
+
+	    [let t: Transition = transitions->select(t | t.source <> initialTransation.target)->first()]
+			fsm.fire(new [t.trigger.event.eventClassName()/]());
+
+        	assertEquals(fsm.getCurrentState(), [initialTransation.target.stateVariavelName()/]);
+		[/let]
+    }
+}
+[/file]
+
+[/let]
+[/let]
+[/let]
+[/let]
+
+[/template]

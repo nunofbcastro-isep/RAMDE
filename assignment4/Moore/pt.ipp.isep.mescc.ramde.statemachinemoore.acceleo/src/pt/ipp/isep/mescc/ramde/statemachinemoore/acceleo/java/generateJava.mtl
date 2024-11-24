@@ -1,0 +1,18 @@
+[comment encoding = UTF-8 /]
+[module generateJava('https://www.isep.ipp.pt/stateMachineMoore')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemoore::acceleo::java::generateJavaEvent /]
+[import pt::ipp::isep::mescc::ramde::statemachinemoore::acceleo::java::generateJavaMain /]
+[import pt::ipp::isep::mescc::ramde::statemachinemoore::acceleo::files::query /]
+
+[template public generateJava(aMooreStateMachine : MooreStateMachine)]
+
+[let folder: String = aMooreStateMachine.projectName()]
+	[for (e: Event | aMooreStateMachine.Event)]
+		[generateJavaEvent(e, folder)/]
+	[/for]
+	
+	[generateJavaMain(aMooreStateMachine, folder)/]
+[/let]
+
+[/template]

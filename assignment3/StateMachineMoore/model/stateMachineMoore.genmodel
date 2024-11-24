@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/StateMachineMoore/src-gen" creationIcons="false"
+    editDirectory="/StateMachineMoore.edit/src-gen" editorDirectory="/StateMachineMoore.editor/src-gen"
+    modelPluginID="StateMachineMoore" modelName="StateMachineMoore" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="22.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>stateMachineMoore.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="StateMachineMoore" disposableProviderFactory="true" ecorePackage="stateMachineMoore.ecore#/">
+    <genClasses ecoreClass="stateMachineMoore.ecore#//Transation">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//Transation/Source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//Transation/Target"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//Transation/Event"/>
+    </genClasses>
+    <genClasses ecoreClass="stateMachineMoore.ecore#//MooreStateMachine">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute stateMachineMoore.ecore#//MooreStateMachine/Name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//MooreStateMachine/State"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//MooreStateMachine/Event"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//MooreStateMachine/Initial"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//MooreStateMachine/Transation"/>
+    </genClasses>
+    <genClasses ecoreClass="stateMachineMoore.ecore#//Initial"/>
+    <genClasses ecoreClass="stateMachineMoore.ecore#//BaseState">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//BaseState/Outgoing"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference stateMachineMoore.ecore#//BaseState/Incoming"/>
+    </genClasses>
+    <genClasses ecoreClass="stateMachineMoore.ecore#//Event">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute stateMachineMoore.ecore#//Event/Name"/>
+    </genClasses>
+    <genClasses ecoreClass="stateMachineMoore.ecore#//State">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute stateMachineMoore.ecore#//State/Name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute stateMachineMoore.ecore#//State/OutputAction"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

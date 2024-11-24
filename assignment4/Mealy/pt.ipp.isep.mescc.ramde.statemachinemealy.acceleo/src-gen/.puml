@@ -1,0 +1,14 @@
+@startuml
+
+	title ""
+
+	state "Light Off" as LightOffState
+	state "Light On" as LightOnState
+	state "Initial" as InitialState
+
+	[*] --> LightOffState
+	LightOnState --> LightOffState : event "On" / output "On"
+	LightOnState --> LightOnState : event "On" / output "On"
+	LightOnState --> LightOffState : event "Off" / output "Off"
+
+@enduml

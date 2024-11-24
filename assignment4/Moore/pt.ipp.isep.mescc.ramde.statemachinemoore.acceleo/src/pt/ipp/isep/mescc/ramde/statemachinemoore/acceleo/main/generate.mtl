@@ -1,0 +1,13 @@
+[comment encoding = UTF-8 /]
+[module generate('https://www.isep.ipp.pt/stateMachineMoore')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemoore::acceleo::uml::generatePlantUML /]
+[import pt::ipp::isep::mescc::ramde::statemachinemoore::acceleo::java::generateJava /]
+
+[template public generateElement(aMooreStateMachine : MooreStateMachine)]
+[comment @main/]
+
+[aMooreStateMachine.generatePlantUML()/]
+[aMooreStateMachine.generateJava()/]
+
+[/template]

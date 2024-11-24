@@ -1,0 +1,11 @@
+[comment encoding = UTF-8 /]
+[module query('https://www.isep.ipp.pt/stateMachineMealy')]
+
+[query public projectName (aMealyStateMachine : MealyStateMachine) : String = aMealyStateMachine.name.replaceAll('[ -]', '').trim()/]
+[query public eventClassName (anEvent : Event) : String = anEvent.name.replaceAll('[ -]', '').trim().concat('Event')/]
+[query public eventFileName (anEvent : Event) : String = anEvent.eventClassName().concat('.java')/]
+[query public stateVariavelName (anState : State) : String = anState.name.replaceAll('[ -]', '').trim().concat('State')/]
+[query public transationName (anTransation : Transation) : String = anTransation.Source.name.trim() + ' To '+anTransation.Target.name.trim()/]
+[query public transationVariavelName (anTransation : Transation) : String = anTransation.transationName().replaceAll('[ -]', '').concat('Transation')/]
+[query public handlerClassName (anTransation : Transation) : String = anTransation.transationVariavelName().concat('Handler')/]
+[query public handlerFileName (anTransation : Transation) : String = anTransation.handlerClassName().concat('.java')/]

@@ -1,0 +1,15 @@
+[comment encoding = UTF-8 /]
+[module generate('https://www.isep.ipp.pt/stateMachineMealy')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::uml::generatePlantUML /]
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::java::generateJava /]
+
+[template public generateElement(aMealyStateMachine : MealyStateMachine)]
+[comment @main/]
+
+ [aMealyStateMachine.generatePlantUML()/]
+
+ [aMealyStateMachine.generateJava()/]
+
+
+[/template]

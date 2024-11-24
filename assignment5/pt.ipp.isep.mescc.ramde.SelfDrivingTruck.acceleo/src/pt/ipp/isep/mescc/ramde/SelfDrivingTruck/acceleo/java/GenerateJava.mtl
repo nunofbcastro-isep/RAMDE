@@ -1,0 +1,25 @@
+[comment encoding = UTF-8 /]
+[module GenerateJava('http://www.eclipse.org/papyrus/sysml/1.6/SysML', 'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks', 'http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::files::Query /]
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::java::GenerateJavaEvent /]
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::java::GenerateJavaHandler /]
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::java::GenerateJavaMain /]
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::java::GenerateJavaTests /]
+
+[template public GenerateJava(st : StateMachine)]
+
+
+[for (e : Event | st.getAllEvents())]
+	[GenerateJavaEvent(e, st.folderProjectName(), st.projectName())/]
+[/for]
+
+[for (t : Transition | st.getAllNonInitialTransations())]
+	[GenerateJavaHandler(t, st.folderProjectName(), st.projectName())/]
+[/for]
+
+[GenerateJavaMain(st)/]
+
+[GenerateJavaTests(st)/]
+
+[/template]

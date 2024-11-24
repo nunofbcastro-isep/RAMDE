@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pt.ipp.isep.mescc.ramde.statemachinemoore:MooreStateMachine
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:pt.ipp.isep.mescc.ramde.statemachinemoore="https://www.isep.ipp.pt/stateMachineMoore"
+    xsi:schemaLocation="https://www.isep.ipp.pt/stateMachineMoore stateMachineMoore.ecore"
+    name="Turnstile Moore">
+  <State name="Locked"
+      Outgoing="//@Transation.1 //@Transation.2"
+      Incoming="//@Transation.2 //@Transation.3"
+      outputAction="Locked"/>
+  <State name="Un-Locked"
+      Outgoing="//@Transation.3 //@Transation.4"
+      Incoming="//@Transation.1 //@Transation.0 //@Transation.4"
+      outputAction="Un-Locked"/>
+  <Event name="Push"/>
+  <Event name="Coin"/>
+  <Transation
+      Source="//@Initial"
+      Target="//@State.1"/>
+  <Transation
+      Source="//@State.0"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Transation
+      Source="//@State.0"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      Source="//@State.1"
+      Target="//@State.0"
+      Event="//@Event.1"/>
+  <Transation
+      Source="//@State.1"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Initial name="Initial"
+      Outgoing="//@Transation.0"/>
+</pt.ipp.isep.mescc.ramde.statemachinemoore:MooreStateMachine>

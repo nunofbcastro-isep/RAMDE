@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pt.ipp.isep.mescc.ramde.statemachinemoore:MooreStateMachine
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:pt.ipp.isep.mescc.ramde.statemachinemoore="https://www.isep.ipp.pt/stateMachineMoore"
+    xsi:schemaLocation="https://www.isep.ipp.pt/stateMachineMoore stateMachineMoore.ecore"
+    name="Light 1 Moore">
+  <State name="Light Off"
+      Outgoing="//@Transation.1"
+      Incoming="//@Transation.5 //@Transation.0 //@Transation.7 //@Transation.6"
+      outputAction="Off"/>
+  <State name="Light On - Dimmed"
+      Outgoing="//@Transation.5 //@Transation.2"
+      Incoming="//@Transation.4 //@Transation.1"
+      outputAction="Dimmed"/>
+  <State name="Light On - Medium"
+      Outgoing="//@Transation.3 //@Transation.6"
+      Incoming="//@Transation.2"
+      outputAction="Medium"/>
+  <State name="Light On - Bright"
+      Outgoing="//@Transation.4 //@Transation.7"
+      Incoming="//@Transation.3"
+      outputAction="Bright"/>
+  <Event name="Off"/>
+  <Event name="On "/>
+  <Transation
+      Source="//@Initial"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      Source="//@State.0"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Transation
+      Source="//@State.1"
+      Target="//@State.2"
+      Event="//@Event.1"/>
+  <Transation
+      Source="//@State.2"
+      Target="//@State.3"
+      Event="//@Event.1"/>
+  <Transation
+      Source="//@State.3"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Transation
+      Source="//@State.1"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      Source="//@State.2"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      Source="//@State.3"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Initial name="Initial"
+      Outgoing="//@Transation.0"/>
+</pt.ipp.isep.mescc.ramde.statemachinemoore:MooreStateMachine>

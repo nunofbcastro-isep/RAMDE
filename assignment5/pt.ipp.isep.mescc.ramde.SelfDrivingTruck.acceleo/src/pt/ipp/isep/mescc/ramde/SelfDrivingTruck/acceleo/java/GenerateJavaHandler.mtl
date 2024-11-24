@@ -1,0 +1,22 @@
+[comment encoding = UTF-8 /]
+[module GenerateJavaHandler('http://www.eclipse.org/papyrus/sysml/1.6/SysML', 'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks', 'http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::files::Query /]
+
+[template public GenerateJavaHandler(t : Transition, folder: String, projectName: String)]
+[file (folder+'/handlers/'+t.handlerFileName(), false, 'UTF-8')]
+package org.jeasy.states.[projectName/].handlers;
+
+import org.jeasy.states.SelfdrivingSystemStates.events.[t.trigger.event.eventClassName()/];
+import org.jeasy.states.api.EventHandler;
+
+import java.util.Date;
+
+public class [t.handlerClassName()/] implements EventHandler<[t.trigger.event.eventClassName()/]> {
+    public void handleEvent([t.trigger.event.eventClassName()/] event) {
+        System.out.println("Notified about event '" + event.getName() + "' triggered at " + new Date(event.getTimestamp()));
+        System.out.println("[t.trigger.name/]..");
+    }
+}
+[/file]
+[/template]

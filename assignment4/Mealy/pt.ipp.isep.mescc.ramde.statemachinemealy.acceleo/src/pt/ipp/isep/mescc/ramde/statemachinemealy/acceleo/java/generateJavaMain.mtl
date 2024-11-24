@@ -1,0 +1,79 @@
+[comment encoding = UTF-8 /]
+[module generateJavaMain('https://www.isep.ipp.pt/stateMachineMealy')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::files::query /]
+
+[template public generateJavaMain(aMealyStateMachine : MealyStateMachine, folder: String)]
+[file (folder+'/'+aMealyStateMachine.projectName()+'.java', false, 'UTF-8')]
+package org.jeasy.states.[folder/];
+
+import org.jeasy.states.api.FiniteStateMachine;
+import org.jeasy.states.api.FiniteStateMachineException;
+import org.jeasy.states.api.State;
+import org.jeasy.states.api.Transition;
+import org.jeasy.states.core.FiniteStateMachineBuilder;
+import org.jeasy.states.core.TransitionBuilder;
+
+import java.util.HashSet;
+import java.util.Scanner;
+import java.util.Set;
+
+public class [aMealyStateMachine.projectName()/] {
+    public static void main(String['[]'/] args) throws FiniteStateMachineException {
+[for (s: State | aMealyStateMachine.State)]
+    	State [s.stateVariavelName()/] = new State("[s.name/]");
+[/for]
+	
+		Set<State> states = new HashSet<>();
+[for (s: State | aMealyStateMachine.State)]
+		states.add([s.stateVariavelName()/]);
+[/for]
+
+[for (t: Transation | aMealyStateMachine.Transation->select(t | not t.Source.oclIsTypeOf(Initial)))]
+	Transition [t.transationVariavelName()/] = new TransitionBuilder()
+            .name("[t.transationName()/]")
+            .sourceState([t.Source.stateVariavelName()/])
+            .eventType([t.Event.eventClassName()/].class)
+            .eventHandler(new [t.handlerClassName()/]())
+            .targetState([t.Target.stateVariavelName()/])
+            .build();
+[/for]
+
+	FiniteStateMachine fsm = new FiniteStateMachineBuilder(states, [aMealyStateMachine.Transation->select(t | not t.Source.oclIsTypeOf(Initial))->asSequence()->first().Source.stateVariavelName()/])
+[for (t: Transation | aMealyStateMachine.Transation->select(t | not t.Source.oclIsTypeOf(Initial)))]
+		.registerTransition([t.transationVariavelName()/])
+[/for]
+        .build();
+
+        System.out.println("Current state: " + fsm.getCurrentState().getName());
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Instructions: Type the command corresponding to the desired event:");
+[for (e: Event | aMealyStateMachine.Event)]
+        System.out.println("  - Type '[e.name.toLowerCase()/]' to trigger the event '[e.name/]'.");
+[/for]
+        System.out.println("  - Type 'exit' to quit.");
+
+        while (true) {
+            String input = scanner.nextLine().trim().toLowerCase();
+            switch (input) {
+[for (e: Event | aMealyStateMachine.Event)]
+				case "[e.name.toLowerCase().trim()/]":
+			        fsm.fire(new [e.eventClassName()/]());
+			        break;
+[/for]
+                case "exit":
+                    System.out.println("Exiting...");
+                    scanner.close(); // Close the scanner resource
+                    return;
+                default:
+                    System.out.println("Invalid command. Please type one of the commands listed or 'exit' to quit.");
+                    break;
+            }
+            System.out.println("Current state: " + fsm.getCurrentState().getName());
+        }
+
+    }
+}
+[/file]
+[/template]

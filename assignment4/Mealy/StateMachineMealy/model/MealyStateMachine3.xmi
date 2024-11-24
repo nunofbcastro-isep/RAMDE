@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pt.ipp.isep.mescc.ramde.statemachinemealy:MealyStateMachine
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:pt.ipp.isep.mescc.ramde.statemachinemealy="https://www.isep.ipp.pt/stateMachineMealy"
+    name="Light 2 Mealy">
+  <State name="Light Off"
+      Outgoing="//@Transation.1"
+      Incoming="//@Transation.2 //@Transation.0"/>
+  <State name="Light On"
+      Outgoing="//@Transation.2 //@Transation.3"
+      Incoming="//@Transation.1 //@Transation.3"/>
+  <Event name="Off"/>
+  <Event name="On "/>
+  <Transation
+      outputAction=""
+      Source="//@Initial"
+      Target="//@State.0"/>
+  <Transation
+      outputAction="On"
+      Source="//@State.0"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Transation
+      outputAction="Off"
+      Source="//@State.1"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      outputAction="On"
+      Source="//@State.1"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Initial name="Initial"
+      Outgoing="//@Transation.0"/>
+</pt.ipp.isep.mescc.ramde.statemachinemealy:MealyStateMachine>

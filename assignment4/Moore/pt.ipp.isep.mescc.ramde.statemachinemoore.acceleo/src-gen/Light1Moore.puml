@@ -1,0 +1,19 @@
+@startuml
+
+	title "Light 1 Moore"
+
+	state "Light Off" as LightOffState : output "Off"
+	state "Light On - Dimmed" as LightOnDimmedState : output "Dimmed"
+	state "Light On - Medium" as LightOnMediumState : output "Medium"
+	state "Light On - Bright" as LightOnBrightState : output "Bright"
+
+	[*] --> LightOffState
+	LightOffState --> LightOnDimmedState : event "On"
+	LightOnDimmedState --> LightOnMediumState : event "On"
+	LightOnMediumState --> LightOnBrightState : event "On"
+	LightOnBrightState --> LightOnDimmedState : event "On"
+	LightOnDimmedState --> LightOffState : event "Off"
+	LightOnMediumState --> LightOffState : event "Off"
+	LightOnBrightState --> LightOffState : event "Off"
+
+@enduml

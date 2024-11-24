@@ -1,0 +1,26 @@
+[comment encoding = UTF-8 /]
+[module generatePlantUML('https://www.isep.ipp.pt/stateMachineMealy')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::files::query /]
+
+[template public generatePlantUML(aMealyStateMachine : MealyStateMachine)]
+[file (aMealyStateMachine.projectName()+'.puml', false, 'UTF-8')]
+@startuml
+
+	title "[aMealyStateMachine.name/]"
+
+[for (s: State | aMealyStateMachine.State)]
+	state "[s.name.trim()/]" as [s.stateVariavelName()/]
+[/for]
+
+[for (trans: Transation | aMealyStateMachine.Transation)]
+[if (trans.Source.oclIsTypeOf(Initial))]
+	['[*]'/] --> [trans.Target.stateVariavelName()/]
+[else]
+	[trans.Source.stateVariavelName()/] --> [trans.Target.stateVariavelName()/] : event "[trans.Event.name.trim()/]" / output "[trans.outputAction.trim()/]"
+[/if]
+[/for]
+
+@enduml
+[/file]
+[/template]

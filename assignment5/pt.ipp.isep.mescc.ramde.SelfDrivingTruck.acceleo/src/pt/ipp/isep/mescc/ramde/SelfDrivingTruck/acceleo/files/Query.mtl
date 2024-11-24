@@ -1,0 +1,35 @@
+[comment encoding = UTF-8 /]
+[module Query('http://www.eclipse.org/papyrus/sysml/1.6/SysML', 'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks', 'http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[query public upperFirstChar (s : String) : String = 
+    if s.size() > 0 then
+        s.at(1).toUpperCase() + s.substring(2, s.size())
+    else 
+        s
+    endif
+/]
+
+[query public stringClear (s : String) : String = s.replaceAll('[ -]', '').trim().upperFirstChar()/]
+
+
+[query public projectName (st : StateMachine) : String = st.name.stringClear()/]
+[query public classTestsName (st : StateMachine) : String = st.projectName()+'Test'/]
+[query public folderTestsName (st : StateMachine) : String = 'src/test/java/org/jeasy/states/'+st.projectName()/]
+[query public folderProjectName (st : StateMachine) : String = 'src/main/java/org/jeasy/states/'+st.projectName()/]
+
+[query public getAllTransations (st : StateMachine) : Sequence(Transition) = st.region->collect(r | r.transition)->asSequence()/]
+[query public getInitialTransation (st : StateMachine) : Transition = st.getAllTransations()->select(t | t.source.oclIsTypeOf(Pseudostate))->first()/]
+[query public getAllNonInitialTransations (st : StateMachine) : Sequence(Transition) = st.getAllTransations()->reject(t | t = st.getInitialTransation())/]
+[query public transationName (t : Transition) : String = t.source.name.trim() + ' To '+t.target.name.trim()/]
+[query public transationVariavelName (t : Transition) : String = t.transationName().stringClear().concat('Transation')/]
+
+[query public getAllEvents (st : StateMachine) : Sequence(Event) = st.getAllNonInitialTransations()->collect(t | t.trigger.event)->asSet()->asSequence()/]
+[query public eventName (e : Event) : String = e.name.stringClear()/]
+[query public eventClassName (e : Event) : String = e.eventName().concat('Event')/]
+[query public eventFileName (e : Event) : String = e.eventClassName().concat('.java')/]
+
+[query public handlerClassName (t : Transition) : String = t.transationVariavelName().concat('Handler')/]
+[query public handlerFileName (t : Transition) : String = t.handlerClassName().concat('.java')/]
+
+[query public getAllStates (st : StateMachine) : Sequence(State) = (st.getAllNonInitialTransations()->collect(t | t.target)->asSet()->asSequence())->union(st.getAllNonInitialTransations()->collect(t | t.source)->asSet()->asSequence())->asSet()->asSequence()/]
+[query public stateVariavelName (s : Vertex) : String = s.name.stringClear().concat('State')/]

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="stateMachineMealy" nsURI="https://www.isep.ipp.pt/stateMachineMealy"
+    nsPrefix="pt.ipp.isep.mescc.ramde.statemachinemealy">
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="Initial" eSuperTypes="#//BaseState">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="MustHaveNoOutgoingTransitions MustHaveSingleIncomingTransition"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="MustHaveNoOutgoingTransitions" value="self.Outgoing->size() = 0"/>
+      <details key="MustHaveSingleIncomingTransition" value="self.Incoming->size() = 1"/>
+    </eAnnotations>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="BaseState">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Outgoing" upperBound="-1"
+        eType="#//Transation" eOpposite="#//Transation/Source"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Incoming" upperBound="-1"
+        eType="#//Transation" eOpposite="#//Transation/Target"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="MealyStateMachine">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="MustHaveValidNameFormat MustHaveUniqueStateName MustHaveUniqueEventName MustHaveUniqueTransationName MustHaveSingleNullOutgoingSource"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="MustHaveValidNameFormat" value="self.Name.size() > 3 and self.Name.substring(1, 1) = self.Name.substring(1, 1).toUpper()"/>
+      <details key="MustHaveUniqueStateName" value="self.State->forAll(s1,s2 | s1 &lt;> s2 implies s1.Name.equalsIgnoreCase(s2.Name)=false)"/>
+      <details key="MustHaveUniqueEventName" value="self.Event->forAll(e1,e2 | e1 &lt;> e2 implies e1.Name.equalsIgnoreCase(e2.Name)=false)"/>
+      <details key="MustHaveUniqueTransationName" value="self.Transation->forAll(t1,t2 | t1 &lt;> t2)"/>
+      <details key="MustHaveSingleNullOutgoingSource" value="self.State->select(s | s.Outgoing->isEmpty() or s.Outgoing->size() = 0)->size() = 1"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="State" lowerBound="1" upperBound="-1"
+        eType="#//State" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Event" lowerBound="1" upperBound="-1"
+        eType="#//Event" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Transation" lowerBound="1"
+        upperBound="-1" eType="#//Transation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Initial" lowerBound="1"
+        eType="#//Initial" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Event">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="MustHaveValidEventNameFormat"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="MustHaveValidEventNameFormat" value="self.Name.size() > 3 and self.Name.substring(1, 1) = self.Name.substring(1, 1).toUpper()"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Transation">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="MustHaveDefinedOutputAction MustHaveDistinctSourceAndTargetStates"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="MustHaveDefinedOutputAction" value="not self.OutputAction.oclIsUndefined()"/>
+      <details key="MustHaveDistinctSourceAndTargetStates" value="self.Source &lt;> self.Target"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="OutputAction" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Source" lowerBound="1"
+        eType="#//BaseState" eOpposite="#//BaseState/Outgoing"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Target" lowerBound="1"
+        eType="#//BaseState" eOpposite="#//BaseState/Incoming"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="Event" lowerBound="1" eType="#//Event"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="State" eSuperTypes="#//BaseState">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ValidStateNameFormat MustHaveNonCircularTransitions MustHaveUniqueOutgoingTransitions MustHaveUniqueIncomingTransitions"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ValidStateNameFormat" value="self.Name.size() > 3 and self.Name.substring(1, 1) = self.Name.substring(1, 1).toUpper()"/>
+      <details key="MustHaveNonCircularTransitions" value="self.Outgoing &lt;> self.Incoming"/>
+      <details key="MustHaveUniqueOutgoingTransitions" value="self.Outgoing->isUnique(e | e)"/>
+      <details key="MustHaveUniqueIncomingTransitions" value="self.Incoming->isUnique(e | e)"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="Name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+</ecore:EPackage>

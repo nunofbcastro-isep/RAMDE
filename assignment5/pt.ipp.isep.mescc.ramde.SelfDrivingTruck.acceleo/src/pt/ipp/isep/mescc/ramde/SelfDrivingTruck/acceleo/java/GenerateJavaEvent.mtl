@@ -1,0 +1,24 @@
+[comment encoding = UTF-8 /]
+[module GenerateJavaEvent('http://www.eclipse.org/papyrus/sysml/1.6/SysML', 'http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks', 'http://www.eclipse.org/uml2/5.0.0/UML')]
+
+[import pt::ipp::isep::mescc::ramde::SelfDrivingTruck::acceleo::files::Query /]
+
+[template public GenerateJavaEvent(e : Event, folder: String, projectName: String)]
+
+[file (folder+'/events/'+e.eventFileName(), false, 'UTF-8')]
+package org.jeasy.states.[projectName/].events;
+
+import org.jeasy.states.api.AbstractEvent;
+
+public class [e.eventClassName()/] extends AbstractEvent {
+    public [e.eventClassName()/]() {
+        super("[e.name/]");
+    }
+
+    protected [e.eventClassName()/](String name) {
+        super(name);
+    }
+}
+[/file]
+
+[/template]

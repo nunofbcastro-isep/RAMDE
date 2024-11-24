@@ -1,0 +1,19 @@
+@startuml
+
+	title "Light 1 Mealy"
+
+	state "Light Off" as LightOffState
+	state "Light On - Dimmed" as LightOnDimmedState
+	state "Light On - Medium" as LightOnMediumState
+	state "Light On - Bright" as LightOnBrightState
+
+	[*] --> LightOffState
+	LightOffState --> LightOnDimmedState : event "On" / output "Dimmed"
+	LightOnDimmedState --> LightOnMediumState : event "On" / output "Medium"
+	LightOnMediumState --> LightOnBrightState : event "On" / output "Bright"
+	LightOnBrightState --> LightOnDimmedState : event "On" / output "Dimmed"
+	LightOnDimmedState --> LightOffState : event "Off" / output "Off"
+	LightOnMediumState --> LightOffState : event "Off" / output "Off"
+	LightOnBrightState --> LightOffState : event "Off" / output "Off"
+
+@enduml

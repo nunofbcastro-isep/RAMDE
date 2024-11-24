@@ -1,0 +1,1474 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks" xmlns:ConstraintBlocks="http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows" xmlns:Requirements="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.6/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/ConstraintBlocks http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks http://www.eclipse.org/papyrus/sysml/1.6/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows http://www.eclipse.org/papyrus/sysml/1.6/SysML/Requirements http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements">
+  <uml:Model xmi:id="_i88zcJryEe-bJflXXd2nVw" name="SelfDrivingTruck_Solution" URI="http://ramde.mescc.isep.ipp.pt/SelfDrivingTruckDiagrams" viewpoint="">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_i_9EIJryEe-bJflXXd2nVw">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_jADx0JryEe-bJflXXd2nVw">
+      <importedPackage xmi:type="uml:Package" href="pathmap://SysML16_LIBRARIES/SysML-Standard-Library.uml#SysML.package_packagedElement_Libraries"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_NVFTsKUlEe-iJ-17iO8wJg" name="2 Solution Domain">
+      <packagedElement xmi:type="uml:Package" xmi:id="_TglzsKUlEe-iJ-17iO8wJg" name="1 System Requiments">
+        <packagedElement xmi:type="uml:Class" xmi:id="_fmBUcKUlEe-iJ-17iO8wJg" name="SR-1 SRS for Truck System">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_sLRygKUqEe-iJ-17iO8wJg" name="SR-1.1 Level 3 Autonomy&#xD;&#xA;"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__F8FsKUqEe-iJ-17iO8wJg" name="SR-1.2 Level 4 Autonomy"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__OYQAKUqEe-iJ-17iO8wJg" name="SR-1.3  Dynamic Speed Control"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__TMekKUqEe-iJ-17iO8wJg" name="SR-1.4 Automated Airbag System"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__VT-cKUqEe-iJ-17iO8wJg" name="SR-1.5 Automatic Seat Belt Verification"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__Ykt0KUqEe-iJ-17iO8wJg" name="SR-1.6 Cargo Transportation Capability"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__awfIKUqEe-iJ-17iO8wJg" name="SR-1.7 Secure Cargo Loading System"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__cVzgKUqEe-iJ-17iO8wJg" name="SR-1.8 Secure Cargo Unloading System"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="__ZabUKUqEe-iJ-17iO8wJg" name="SR-1.9 Automated Preventive Maintenance"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_DH0AkKaoEe-4j-wKsEki3A" name="SR-1.10 Quick Response to Unexpected Events"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_DH1OsKaoEe-4j-wKsEki3A" name="SR-1.11  Instant Alerts and Reports"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_DH2c0KaoEe-4j-wKsEki3A" name="SR-1.12 Fuel Consumption Optimization"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_DH3q8KaoEe-4j-wKsEki3A" name="SR-1.13  Accident Rate Reduction"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_DH3q8aaoEe-4j-wKsEki3A" name="SR-1.14 On-Time Delivery"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_EieUoKkBEe-JnuutqrYD_A" name="SR-1.15 Max Fuel Consumption"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_b-ZNsKaqEe-4j-wKsEki3A" client="_sLRygKUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_nIQjkKBTEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_cISwkKaqEe-4j-wKsEki3A" client="__F8FsKUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_ot7g4KBTEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ch0q4KaqEe-4j-wKsEki3A" client="__OYQAKUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_XKC98KBUEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_cx4gIKaqEe-4j-wKsEki3A" client="__TMekKUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_Y97WYKBUEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_c_NxgKaqEe-4j-wKsEki3A" client="__VT-cKUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_Zv3wsKBUEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dcbR8KaqEe-4j-wKsEki3A" client="__Ykt0KUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_asZDUKBUEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_hLdvgKaqEe-4j-wKsEki3A" client="__awfIKUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_bz6sEKBUEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_hZfkcKaqEe-4j-wKsEki3A" client="__cVzgKUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_Iom4UKBVEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_h-ZoUKaqEe-4j-wKsEki3A" client="__ZabUKUqEe-iJ-17iO8wJg">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_JPl_0KBVEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ibEWMKaqEe-4j-wKsEki3A" client="_DH0AkKaoEe-4j-wKsEki3A">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_V91NAKBVEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_i2wMoKaqEe-4j-wKsEki3A" client="_DH1OsKaoEe-4j-wKsEki3A">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_WwGXcKBVEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_jO61AKaqEe-4j-wKsEki3A" client="_DH2c0KaoEe-4j-wKsEki3A">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_XOEs4KBVEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_jdPk4KaqEe-4j-wKsEki3A" client="_DH3q8KaoEe-4j-wKsEki3A">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_XtQjQKBVEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_j45mIKaqEe-4j-wKsEki3A" client="_DH3q8aaoEe-4j-wKsEki3A">
+          <supplier xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_YHNUUKBVEe-XPMZ3TNb-kg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_npY_wKarEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_9SXqsKX4Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_oRx1cKarEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_9SUAUKX4Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_o5NB0KarEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_9SRkEKX4Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_pKhbUKarEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_9SPH0KX4Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_RbPGEKasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_7HeLUKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ds2MMKatEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_eAuxgKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BFsQkKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_eGeNIKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BFsQkKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_eNYGYKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#__eOjgKUiEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_eRtz0KatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#__eOjgKUiEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ehMaQKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_-IHsMKUiEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_fgBaAKatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_D3QZQKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_f3HEUKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_D3QZQKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_f99TMKatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_D3QZQKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dpCqQKatEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dhhF8KatEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dduyIKatEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_daLu4KatEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dWx1kKatEe-4j-wKsEki3A" supplier="__ZabUKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dPx1sKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dL4NIKatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dIN1IKatEe-4j-wKsEki3A" supplier="__VT-cKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dEZFEKatEe-4j-wKsEki3A" supplier="__TMekKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dA4eEKatEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dTJSwKatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_c0lugKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_b2yCcKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_sbkVcKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bts-8KatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_qeiBAKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bnC9UKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_qAI00KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_aqFl0KatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_qAI00KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Z4-R8KatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_uq6h4KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ZwS3EKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_uq6h4KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Zs5k0KatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_uq6h4KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ZFHMEKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_qeiBAKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Y5Uy0KatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_sbkVcKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_YLXgoKatEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_YG-v4KatEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_YCPZ0KatEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_X7lYMKatEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_X3I9EKatEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XzfMIKatEe-4j-wKsEki3A" supplier="__ZabUKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XwKLUKatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XplpQKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XlcwIKatEe-4j-wKsEki3A" supplier="__VT-cKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XiJkgKatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XX74kKatEe-4j-wKsEki3A" supplier="__TMekKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XUrwQKatEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XO__AKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XL8D8KatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_yOXagKUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_W6JwYKatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ze_78KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_W0kFwKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ze_78KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_c9Va0KatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BdtH8KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_WzRFQKatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ze_78KUjEe-kGc-Z8FcZ5g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VsAiQKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_1mw3cKXYEe-R9YIajN6XUA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Von3EKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_1mw3cKXYEe-R9YIajN6XUA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VhJWEKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2ZVj4KXYEe-R9YIajN6XUA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VeVSoKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2ZVj4KXYEe-R9YIajN6XUA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VGuq8KatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_F6_j0KXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_U9BVUKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_F6_j0KXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_UruJ8KatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_GZVssKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_UnpiQKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_GZVssKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_UOYGoKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_IJhQ4KXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_UI04QKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_IJhQ4KXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TxtYwKatEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TtzJIKatEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ToH-8KatEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TjLNgKatEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TfSMAKatEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TbWHMKatEe-4j-wKsEki3A" supplier="__ZabUKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TXyc4KatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TTxfkKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TQOcUKatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TM8e0KatEe-4j-wKsEki3A" supplier="__VT-cKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TD53kKatEe-4j-wKsEki3A" supplier="__TMekKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_S6fc4KatEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_S3U0IKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Swt10KatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_JFg_EKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SYY1YKatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_KStyAKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_STVWQKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_KStyAKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_QXEd4KatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_LZnvsKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_QTPt0KatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_LZnvsKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_QCyP8KatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_MZnNEKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_PzmkcKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_MZnNEKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Pm3wAKatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_OIVYsKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_PeWtMKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_OIVYsKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_PZ5rAKatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_OIVYsKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_NDIn8KatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_iaj7wKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_M94UgKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_iaj7wKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ME2awKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_asqxEKXvEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_L_LQkKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_asqxEKXvEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Lu_fgKatEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_v4Ov4KXvEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_A-UyQKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_v4Ov4KXvEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_A5v0QKatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_v4Ov4KXvEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Ap-S4KatEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_a1xNQKXwEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_AlwhQKatEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_a1xNQKXwEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ATyAcKatEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_IZx9oKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ANWBQKatEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_IZx9oKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_AH45gKatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_IZx9oKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="__DW6YKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_uJ7wIKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_-_ZncKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_uJ7wIKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9si4cKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_WPP4oKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9okXYKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_WPP4oKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9dwOgKasEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9aISwKasEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9V6hIKasEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9RoeEKasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9JRzUKasEe-4j-wKsEki3A" supplier="__ZabUKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9E1_QKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9AviYKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_89D8QKasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_81BakKasEe-4j-wKsEki3A" supplier="__VT-cKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_8wrGEKasEe-4j-wKsEki3A" supplier="__TMekKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_8k8XMKasEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_8gYAQKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_8cpW0KasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_7jW-YKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_rABcEKX1Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_7fzUEKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_rABcEKX1Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_5mK48KasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_MdLIUKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_5hPVoKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_MdLIUKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_5EB1MKasEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_5AMeEKasEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_47-FYKasEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_433BcKasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_1M9dAKasEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_1G87oKasEe-4j-wKsEki3A" supplier="__ZabUKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_1C47AKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_0_FZEKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_zmt38KasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_zi5H4KasEe-4j-wKsEki3A" supplier="__VT-cKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_zeyD8KasEe-4j-wKsEki3A" supplier="__TMekKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_zZO1kKasEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9NXCEKasEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_v-o1sKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_zU5vMKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_zQ_fkKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_ey6JgKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_yU_xYKasEe-4j-wKsEki3A" supplier="__VT-cKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_yQz08KasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_yMxCcKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_yIhboKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_yEpBMKasEe-4j-wKsEki3A" supplier="__ZabUKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_x_WRgKasEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_x7cB4KasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_x2l-IKasEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xyrHcKasEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xihyoKasEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xbv1MKasEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xX4o4KasEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xUNp0KasEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xOJeEKasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xKjXgKasEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xGf98KasEe-4j-wKsEki3A" supplier="__ZabUKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_xDGEoKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_w_IKoKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_w7JpkKasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_wxTKAKasEe-4j-wKsEki3A" supplier="__TMekKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_wtr1UKasEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_vxFDIKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_vpnJMKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_vWlfgKasEe-4j-wKsEki3A" supplier="__TMekKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_vRb5wKasEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_vMcFAKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_vJkXMKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_BHZGYKX3Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_u5M_8KasEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHGwgKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_uA--gKasEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHOFQKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_tWLuAKasEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHJz0KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_s8Xf0KasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHJz0KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_s3fm4KasEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHJz0KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_su8u4KasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHJz0KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_srOsgKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHJz0KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_sZQLsKasEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHJz0KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_sRWM4KasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHJz0KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_sNVPkKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHJz0KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_rBnDUKasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHQhgKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_o-JWwKasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHS9wKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_mK_5sKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyPUoKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_h_81kKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHS9wKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_w2cvwKasEe-4j-wKsEki3A" supplier="__VT-cKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_2oUfcKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SP6O0KatEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_KStyAKXtEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_h65WcKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_fHS9wKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_giRWoKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_VeM2MKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_gcdpkKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_VeM2MKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_gJY8kKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_-uZoAKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_gF_DQKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_-uZoAKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_f84KkKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_HXSJYKXyEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_f43NQKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_HXSJYKXyEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_d40oIKasEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_d0_4EKasEe-4j-wKsEki3A" supplier="_DH3q8KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dwsm4KasEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dqaYsKasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dkYpMKasEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dhXKYKasEe-4j-wKsEki3A" supplier="__ZabUKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dbt1YKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dVRPIKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dR7AMKasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dMY_8KasEe-4j-wKsEki3A" supplier="__VT-cKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dJHpgKasEe-4j-wKsEki3A" supplier="__TMekKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dFa1QKasEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_dB_GwKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_c8wBcKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_nS_bkKXzEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_cAP88KasEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyPUoKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bvNQQKasEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyPUoKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bW76MKasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyPUoKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bFryIKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyPUoKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bA1HUKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyPUoKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VM4ywKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nylS4KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VF2WoKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nylS4KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VD7rEKasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nylS4KX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SpdMsKasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_UQQcYKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SlZMEKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_UQQcYKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Sg34cKasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_UQQcYKXxEe-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_R0hIwKasEe-4j-wKsEki3A" supplier="_DH3q8aaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ2-AKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_RNKN0KasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_7HeLUKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_RJywwKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Port" href="SelfDrivingTruck_Problem.uml#_7HeLUKX2Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_QO7D8KasEe-4j-wKsEki3A" supplier="_DH1OsKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ2-AKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ankSwKasEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyPUoKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ablFMKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyPUoKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_P7JMUKasEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ2-AKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_OwAO4KasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ2-AKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_OrMnYKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ2-AKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_LXYGMKasEe-4j-wKsEki3A" supplier="__F8FsKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ2-AKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Kn2twKasEe-4j-wKsEki3A" supplier="_sLRygKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ2-AKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_JPudMKasEe-4j-wKsEki3A" supplier="__OYQAKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ2-AKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Fwwb8KasEe-4j-wKsEki3A" supplier="__cVzgKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ72gKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_FhuhcKasEe-4j-wKsEki3A" supplier="__awfIKUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ72gKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_FYBL0KasEe-4j-wKsEki3A" supplier="__Ykt0KUqEe-iJ-17iO8wJg">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_uJ72gKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_WFOI8KasEe-4j-wKsEki3A" supplier="_DH2c0KaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_nyZssKX5Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_rm9BgKarEe-4j-wKsEki3A" supplier="_DH0AkKaoEe-4j-wKsEki3A">
+          <client xmi:type="uml:Property" href="SelfDrivingTruck_Problem.uml#_9SMrkKX4Ee-yMPPpQU2HDQ"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Constraint" xmi:id="_gUnwcKkCEe-JnuutqrYD_A" name="Max Fuel Consumption">
+          <specification xmi:type="uml:OpaqueExpression" xmi:id="_gUqzwKkCEe-JnuutqrYD_A" name="constraintSpec">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            <language>OCL</language>
+            <body>x&lt;=0.4</body>
+          </specification>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_jfjbYKkCEe-JnuutqrYD_A" client="_gUnwcKkCEe-JnuutqrYD_A" supplier="_EieUoKkBEe-JnuutqrYD_A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_HtcpkKkGEe-JnuutqrYD_A" client="_fmBUcKUlEe-iJ-17iO8wJg" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_HxKr8KkGEe-JnuutqrYD_A" client="_sLRygKUqEe-iJ-17iO8wJg" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_IXqrQKkGEe-JnuutqrYD_A" client="__F8FsKUqEe-iJ-17iO8wJg" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_KvyZMKkGEe-JnuutqrYD_A" client="_DH0AkKaoEe-4j-wKsEki3A" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_LwUCEKkGEe-JnuutqrYD_A" client="_DH1OsKaoEe-4j-wKsEki3A" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_L-_-UKkGEe-JnuutqrYD_A" client="_DH1OsKaoEe-4j-wKsEki3A" supplier="_K4s3Eqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_MIYj0KkGEe-JnuutqrYD_A" client="_DH1OsKaoEe-4j-wKsEki3A" supplier="_Yh5C4KawEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_M7YHAKkGEe-JnuutqrYD_A" client="_DH2c0KaoEe-4j-wKsEki3A" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_NwhmUKkGEe-JnuutqrYD_A" client="_DH3q8KaoEe-4j-wKsEki3A" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_QASpgKkGEe-JnuutqrYD_A" client="_DH3q8aaoEe-4j-wKsEki3A" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_QyoFYKkGEe-JnuutqrYD_A" client="_DH3q8aaoEe-4j-wKsEki3A" supplier="_Yh5C4KawEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_RTJ_kKkGEe-JnuutqrYD_A" client="_EieUoKkBEe-JnuutqrYD_A" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SlJy8KkGEe-JnuutqrYD_A" client="__OYQAKUqEe-iJ-17iO8wJg" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TOoNwKkGEe-JnuutqrYD_A" client="_fmBUcKUlEe-iJ-17iO8wJg" supplier="_S4di8qa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TWjasKkGEe-JnuutqrYD_A" client="_fmBUcKUlEe-iJ-17iO8wJg" supplier="_K4s3Eqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_TfetMKkGEe-JnuutqrYD_A" client="_fmBUcKUlEe-iJ-17iO8wJg" supplier="_Yh5C4KawEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_W7s8cKkGEe-JnuutqrYD_A" client="__VT-cKUqEe-iJ-17iO8wJg" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_XzKv8KkGEe-JnuutqrYD_A" client="__Ykt0KUqEe-iJ-17iO8wJg" supplier="_Yh5C4KawEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_X8iHUKkGEe-JnuutqrYD_A" client="__awfIKUqEe-iJ-17iO8wJg" supplier="_Yh5C4KawEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_YL9DYKkGEe-JnuutqrYD_A" client="__cVzgKUqEe-iJ-17iO8wJg" supplier="_Yh5C4KawEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_aHEFMKkGEe-JnuutqrYD_A" client="_DH0AkKaoEe-4j-wKsEki3A" supplier="_K4s3Eqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_bXyGMKkGEe-JnuutqrYD_A" client="_DH2c0KaoEe-4j-wKsEki3A" supplier="_K4s3Eqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_biTUIKkGEe-JnuutqrYD_A" client="_DH2c0KaoEe-4j-wKsEki3A" supplier="_Yh5C4KawEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_eVo-cKkGEe-JnuutqrYD_A" client="_DH2c0KaoEe-4j-wKsEki3A" supplier="_OmgI4KkCEe-JnuutqrYD_A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_iym5AKkGEe-JnuutqrYD_A" client="_EieUoKkBEe-JnuutqrYD_A" supplier="_K4s3Eqa1Ee-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_j87-IKkGEe-JnuutqrYD_A" client="_EieUoKkBEe-JnuutqrYD_A" supplier="_Yh5C4KawEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ocnOcKkGEe-JnuutqrYD_A" client="_EieUoKkBEe-JnuutqrYD_A" supplier="_OmgI4KkCEe-JnuutqrYD_A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_t_tqoKkGEe-JnuutqrYD_A" client="__Ykt0KUqEe-iJ-17iO8wJg" supplier="_VzABcqa1Ee-4j-wKsEki3A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_r_QTQKUrEe-iJ-17iO8wJg" name="2 System Structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_x0KRIKUrEe-iJ-17iO8wJg" name="1 Logical Interfaces">
+          <packagedElement xmi:type="uml:Class" xmi:id="_kMGtoKa4Ee-4j-wKsEki3A" name="iUserDataInlet">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_kMGtoaa4Ee-4j-wKsEki3A" name="l" visibility="public" type="_Bgm-8Ka4Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_f8x7kKa6Ee-4j-wKsEki3A" name="iEnviromentalDataInlet">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_f8x7kaa6Ee-4j-wKsEki3A" name="s" visibility="public" type="_FALLMKa6Ee-4j-wKsEki3A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_rtkpEKa6Ee-4j-wKsEki3A" name="l" visibility="public" type="_TRpFsKa6Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_UV2fQKa7Ee-4j-wKsEki3A" name="iUserDataOutlet">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_UV2fQaa7Ee-4j-wKsEki3A" name="l" visibility="public" type="_Bgm-8Ka4Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_kxjcsKa7Ee-4j-wKsEki3A" name="iEnviromentalDataOutlet">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_kxjcsaa7Ee-4j-wKsEki3A" name="a" visibility="public" type="_u4TYUKa9Ee-4j-wKsEki3A"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_kxjcsqa7Ee-4j-wKsEki3A" name="l" visibility="public" type="_Bgm-8Ka4Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_QmI20Ka8Ee-4j-wKsEki3A" name="iCargoDataInlet">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_QmI20aa8Ee-4j-wKsEki3A" name="c" visibility="public" type="_drzFgKa8Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_D0lacKa9Ee-4j-wKsEki3A" name="iCargoDataOutlet">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_D0lacaa9Ee-4j-wKsEki3A" name="c" visibility="public" type="_drzFgKa8Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_-GEtkKa-Ee-4j-wKsEki3A" name="iInternalControl">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_-GEtkaa-Ee-4j-wKsEki3A" name="cmd" visibility="public" type="_WMdUMKa-Ee-4j-wKsEki3A"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_1Ho0EKUrEe-iJ-17iO8wJg" name="2 Exchange Items">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Bgm-8Ka4Ee-4j-wKsEki3A" name="Localization">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_LFjf8Ka4Ee-4j-wKsEki3A" name="Latitude">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_RJaf0Ka4Ee-4j-wKsEki3A" name="Longitude">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_FALLMKa6Ee-4j-wKsEki3A" name="Sensor"/>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_KQ76MKa6Ee-4j-wKsEki3A" name="Cam">
+            <generalization xmi:type="uml:Generalization" xmi:id="_aoUYUKa6Ee-4j-wKsEki3A" general="_FALLMKa6Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_LExK4Ka6Ee-4j-wKsEki3A" name="LiDAR">
+            <generalization xmi:type="uml:Generalization" xmi:id="_bDpCYKa6Ee-4j-wKsEki3A" general="_FALLMKa6Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_QGOSkKa6Ee-4j-wKsEki3A" name="Radar">
+            <generalization xmi:type="uml:Generalization" xmi:id="_bdfs0Ka6Ee-4j-wKsEki3A" general="_FALLMKa6Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_TRpFsKa6Ee-4j-wKsEki3A" name="GNSS"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_drzFgKa8Ee-4j-wKsEki3A" name="Cargo">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_fWbbUKa8Ee-4j-wKsEki3A" name="Quantity">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_jJXhcKa8Ee-4j-wKsEki3A" name="Name">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_oLn6YKa8Ee-4j-wKsEki3A" name="Kg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_WMdUMKa-Ee-4j-wKsEki3A" name="Command"/>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_o1PNMKa-Ee-4j-wKsEki3A" name="Start">
+            <generalization xmi:type="uml:Generalization" xmi:id="_zncykKa-Ee-4j-wKsEki3A" general="_WMdUMKa-Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_o6PpAKa-Ee-4j-wKsEki3A" name="Stop">
+            <generalization xmi:type="uml:Generalization" xmi:id="_0G3ScKa-Ee-4j-wKsEki3A" general="_WMdUMKa-Ee-4j-wKsEki3A"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_2iXFoKUrEe-iJ-17iO8wJg" name="3 Logical Subsystems">
+          <packagedElement xmi:type="uml:Class" xmi:id="_VAHasKavEe-4j-wKsEki3A" name="Cargo System">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_twYjcKa8Ee-4j-wKsEki3A" name=": iCargoDataInlet" type="_QmI20Ka8Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_0ndI8Ka8Ee-4j-wKsEki3A" name=": iCargoDataOutlet" type="_D0lacKa9Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_kbFgoKa_Ee-4j-wKsEki3A" name=": iInternalControl" type="_-GEtkKa-Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_MG2IMKkFEe-JnuutqrYD_A" name="FuelConsumption">
+              <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_mdjh8KavEe-4j-wKsEki3A" name="Environmental System">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_6hd7MKa6Ee-4j-wKsEki3A" name=":iEnviromentalDataInlet" type="_f8x7kKa6Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_yiJewKa7Ee-4j-wKsEki3A" name=": iEnviromentalDataOutlet" type="_kxjcsKa7Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_h933UKa_Ee-4j-wKsEki3A" name=": iInternalControl" type="_-GEtkKa-Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_QSqBUKkFEe-JnuutqrYD_A" name="FuelConsumption">
+              <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_rP4ogKavEe-4j-wKsEki3A" name="Human Machine System">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_kCXtYKa5Ee-4j-wKsEki3A" name=": iUserDataInlet" type="_kMGtoKa4Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_cegocKa7Ee-4j-wKsEki3A" name=": iUserDataOutlet" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_fSeoEKa_Ee-4j-wKsEki3A" name=": iInternalControl" type="_-GEtkKa-Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_Ud2PYKkFEe-JnuutqrYD_A" name="FuelConsumption">
+              <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_so1_gKavEe-4j-wKsEki3A" name="Self-Driving System">
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_8DD0UKa7Ee-4j-wKsEki3A" name=": OutputInfo" aggregation="composite">
+              <type xmi:type="uml:Class" href="../car/VehicleCCU_Solution1.uml#_dRD_YIlyEe-5zvke16im0Q"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_JrOTIKa8Ee-4j-wKsEki3A" name=": iUserDataInlet" type="_kMGtoKa4Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_W__fYKa9Ee-4j-wKsEki3A" name=": iCargoDataInlet" type="_QmI20Ka8Ee-4j-wKsEki3A" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Port" xmi:id="_amfaEKa_Ee-4j-wKsEki3A" name=": iInternalControl" aggregation="composite"/>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_S0bagKkFEe-JnuutqrYD_A" name="FuelConsumption">
+              <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+            </ownedAttribute>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_u4TYUKa9Ee-4j-wKsEki3A" name="Alert">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_v-VMQKa9Ee-4j-wKsEki3A" name="Alert">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_y5G7UKa9Ee-4j-wKsEki3A" name="DateTime">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EDate"/>
+            </ownedAttribute>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_RCGF8KavEe-4j-wKsEki3A" name="Truck System">
+          <generalization xmi:type="uml:Generalization" xmi:id="_QrUgUKkCEe-JnuutqrYD_A">
+            <general xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_vxLMAKX3Ee-yMPPpQU2HDQ"/>
+          </generalization>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Yh5C4KawEe-4j-wKsEki3A" name="cargo system" type="_VAHasKavEe-4j-wKsEki3A" aggregation="composite" association="_Yh4b0KawEe-4j-wKsEki3A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Yh5C4aawEe-4j-wKsEki3A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Yh5C4qawEe-4j-wKsEki3A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_K4s3Eqa1Ee-4j-wKsEki3A" name="environmental system" type="_mdjh8KavEe-4j-wKsEki3A" aggregation="composite" association="_K4pzwKa1Ee-4j-wKsEki3A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_K4teIKa1Ee-4j-wKsEki3A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_K4teIaa1Ee-4j-wKsEki3A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_S4di8qa1Ee-4j-wKsEki3A" name="human machine system" type="_rP4ogKavEe-4j-wKsEki3A" aggregation="composite" association="_S4c74Ka1Ee-4j-wKsEki3A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S4di86a1Ee-4j-wKsEki3A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S4di9Ka1Ee-4j-wKsEki3A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_VzABcqa1Ee-4j-wKsEki3A" name="self-driving system" type="_so1_gKavEe-4j-wKsEki3A" aggregation="composite" association="_Vy_aYKa1Ee-4j-wKsEki3A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_VzABc6a1Ee-4j-wKsEki3A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_VzABdKa1Ee-4j-wKsEki3A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_OmgI4KkCEe-JnuutqrYD_A" name="TotalFuelConsumption">
+            <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tba8sKkEEe-JnuutqrYD_A" name="cargo system" type="_VAHasKavEe-4j-wKsEki3A" aggregation="composite" association="_tbXSUKkEEe-JnuutqrYD_A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tbbjwKkEEe-JnuutqrYD_A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tbbjwakEEe-JnuutqrYD_A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zajNkqkEEe-JnuutqrYD_A" name="environmental system" type="_mdjh8KavEe-4j-wKsEki3A" aggregation="composite" association="_zah_cKkEEe-JnuutqrYD_A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zajNk6kEEe-JnuutqrYD_A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zajNlKkEEe-JnuutqrYD_A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_z72j0qkEEe-JnuutqrYD_A" name="self-driving system" type="_so1_gKavEe-4j-wKsEki3A" aggregation="composite" association="_z718wKkEEe-JnuutqrYD_A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_z73K4KkEEe-JnuutqrYD_A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_z73K4akEEe-JnuutqrYD_A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_2aHWAqkEEe-JnuutqrYD_A" name="human machine system" type="_rP4ogKavEe-4j-wKsEki3A" aggregation="composite" association="_2aGu8KkEEe-JnuutqrYD_A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2aH9EKkEEe-JnuutqrYD_A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2aH9EakEEe-JnuutqrYD_A" value="1"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Yh4b0KawEe-4j-wKsEki3A" memberEnd="_Yh5C4KawEe-4j-wKsEki3A _Yh5p8KawEe-4j-wKsEki3A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Yh4b0aawEe-4j-wKsEki3A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Yh4b0qawEe-4j-wKsEki3A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Yh5p8KawEe-4j-wKsEki3A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="_Yh4b0KawEe-4j-wKsEki3A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_K4pzwKa1Ee-4j-wKsEki3A" memberEnd="_K4s3Eqa1Ee-4j-wKsEki3A _K4uFMKa1Ee-4j-wKsEki3A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_K4s3EKa1Ee-4j-wKsEki3A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_K4s3Eaa1Ee-4j-wKsEki3A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_K4uFMKa1Ee-4j-wKsEki3A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="_K4pzwKa1Ee-4j-wKsEki3A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_S4c74Ka1Ee-4j-wKsEki3A" memberEnd="_S4di8qa1Ee-4j-wKsEki3A _S4eKAKa1Ee-4j-wKsEki3A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S4di8Ka1Ee-4j-wKsEki3A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S4di8aa1Ee-4j-wKsEki3A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_S4eKAKa1Ee-4j-wKsEki3A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="_S4c74Ka1Ee-4j-wKsEki3A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Vy_aYKa1Ee-4j-wKsEki3A" memberEnd="_VzABcqa1Ee-4j-wKsEki3A _VzABdaa1Ee-4j-wKsEki3A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_VzABcKa1Ee-4j-wKsEki3A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_VzABcaa1Ee-4j-wKsEki3A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_VzABdaa1Ee-4j-wKsEki3A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="_Vy_aYKa1Ee-4j-wKsEki3A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Dj_y0KkEEe-JnuutqrYD_A" name="" client="_RCGF8KavEe-4j-wKsEki3A" supplier="_EieUoKkBEe-JnuutqrYD_A"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_732joKUrEe-iJ-17iO8wJg" name="3  Subsystem Behavior"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_-oPAkKUrEe-iJ-17iO8wJg" name="4 Subsystem Parameters">
+        <packagedElement xmi:type="uml:Class" xmi:id="_wxPWQKbFEe-4j-wKsEki3A" name="TotalFuelConsumption">
+          <ownedRule xmi:type="uml:Constraint" xmi:id="_5zuqcKbFEe-4j-wKsEki3A" name="Constraint5">
+            <specification xmi:type="uml:OpaqueExpression" xmi:id="_5zv4kKbFEe-4j-wKsEki3A" name="totalFuelCons">
+              <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+              <language>OCL</language>
+              <body>Sensors+Cargo+Driving+GNSS</body>
+            </specification>
+          </ownedRule>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4FfnAKbFEe-4j-wKsEki3A" name="Sensors" aggregation="composite">
+            <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4Fg1IKbFEe-4j-wKsEki3A" name="Cargo" aggregation="composite">
+            <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4FiqUKbFEe-4j-wKsEki3A" name="Driving" aggregation="composite">
+            <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_4Fj4cKbFEe-4j-wKsEki3A" name="GNSS" aggregation="composite">
+            <type xmi:type="uml:DataType" href="SelfDrivingTruck_Problem.uml#_bmG0AKT-Ee-kGc-Z8FcZ5g"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_tbXSUKkEEe-JnuutqrYD_A" memberEnd="_tba8sKkEEe-JnuutqrYD_A _tbbjwqkEEe-JnuutqrYD_A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tbZukKkEEe-JnuutqrYD_A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tbZukakEEe-JnuutqrYD_A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_tbbjwqkEEe-JnuutqrYD_A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="_tbXSUKkEEe-JnuutqrYD_A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_zah_cKkEEe-JnuutqrYD_A" memberEnd="_zajNkqkEEe-JnuutqrYD_A _zaj0oKkEEe-JnuutqrYD_A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zajNkKkEEe-JnuutqrYD_A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zajNkakEEe-JnuutqrYD_A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_zaj0oKkEEe-JnuutqrYD_A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="_zah_cKkEEe-JnuutqrYD_A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_z718wKkEEe-JnuutqrYD_A" memberEnd="_z72j0qkEEe-JnuutqrYD_A _z73K4qkEEe-JnuutqrYD_A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_z72j0KkEEe-JnuutqrYD_A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_z72j0akEEe-JnuutqrYD_A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_z73K4qkEEe-JnuutqrYD_A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="_z718wKkEEe-JnuutqrYD_A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_2aGu8KkEEe-JnuutqrYD_A" memberEnd="_2aHWAqkEEe-JnuutqrYD_A _2aH9EqkEEe-JnuutqrYD_A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2aHWAKkEEe-JnuutqrYD_A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2aHWAakEEe-JnuutqrYD_A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_2aH9EqkEEe-JnuutqrYD_A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="_2aGu8KkEEe-JnuutqrYD_A"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_A_EVEKUsEe-iJ-17iO8wJg" name="5 Tracebility"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_5KI7sKkGEe-JnuutqrYD_A" name="2.1 Self-Driving System Solution Domain">
+      <packagedElement xmi:type="uml:Package" xmi:id="__vna4KkGEe-JnuutqrYD_A" name="1 Subsystem Requirements">
+        <packagedElement xmi:type="uml:Class" xmi:id="_GT0HsKkHEe-JnuutqrYD_A" name="SSR for Self-Driving System">
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_Q7ClEKkHEe-JnuutqrYD_A" name="SSR-1.1 Autonomy">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_FsQjAKkIEe-JnuutqrYD_A" name="SSR-1.1.2 Level 4 Autonomy"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_DqwlUKkIEe-JnuutqrYD_A" name="SSR-1.1.1  Level 3 Autonomy"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_NSeRAKkJEe-JnuutqrYD_A" name="SSR-1.2 Obstacle Detection System">
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_NN9kcKkJEe-JnuutqrYD_A" name="SSR-1.2.1 Obstacle Detection Range"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_NcmdYKkJEe-JnuutqrYD_A" name="SSR-1.2.2 Multi-Sensor Integration"/>
+            <nestedClassifier xmi:type="uml:Class" xmi:id="_AMD-8KkKEe-JnuutqrYD_A" name="SSR-1.2.3 Robustness in Adverse Conditions"/>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_NXc3oKkJEe-JnuutqrYD_A" name="SSR-1.3 Route Optimization Module"/>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_RjnA8KkHEe-JnuutqrYD_A" name="SSR-1.4 Max Fuel Consumption"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="__xgRQKkGEe-JnuutqrYD_A" memberEnd="__xgRQ6kGEe-JnuutqrYD_A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__xgRQakGEe-JnuutqrYD_A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__xgRQqkGEe-JnuutqrYD_A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="__xgRQ6kGEe-JnuutqrYD_A" name="truck system" type="_RCGF8KavEe-4j-wKsEki3A" association="__xgRQKkGEe-JnuutqrYD_A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="__1if4KkKEe-JnuutqrYD_A" client="_FsQjAKkIEe-JnuutqrYD_A" supplier="__F8FsKUqEe-iJ-17iO8wJg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ABR10KkLEe-JnuutqrYD_A" client="_DqwlUKkIEe-JnuutqrYD_A" supplier="_sLRygKUqEe-iJ-17iO8wJg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_DAh1MKkLEe-JnuutqrYD_A" client="_RjnA8KkHEe-JnuutqrYD_A" supplier="_EieUoKkBEe-JnuutqrYD_A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_FU3PUKkLEe-JnuutqrYD_A" client="_NXc3oKkJEe-JnuutqrYD_A" supplier="_DH2c0KaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SXk3sKkLEe-JnuutqrYD_A" client="_NN9kcKkJEe-JnuutqrYD_A" supplier="_DH3q8KaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SidSAKkLEe-JnuutqrYD_A" client="_NcmdYKkJEe-JnuutqrYD_A" supplier="_DH3q8KaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_SrTE8KkLEe-JnuutqrYD_A" client="_AMD-8KkKEe-JnuutqrYD_A" supplier="_DH3q8KaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_UdrBgKkLEe-JnuutqrYD_A" client="_NcmdYKkJEe-JnuutqrYD_A" supplier="_DH1OsKaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_UiGOgKkLEe-JnuutqrYD_A" client="_AMD-8KkKEe-JnuutqrYD_A" supplier="_DH1OsKaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Up6twKkLEe-JnuutqrYD_A" client="_NN9kcKkJEe-JnuutqrYD_A" supplier="_DH1OsKaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_VntywKkLEe-JnuutqrYD_A" client="_NN9kcKkJEe-JnuutqrYD_A" supplier="_DH0AkKaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_V_HmIKkLEe-JnuutqrYD_A" client="_NcmdYKkJEe-JnuutqrYD_A" supplier="_DH0AkKaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_WCwwAKkLEe-JnuutqrYD_A" client="_AMD-8KkKEe-JnuutqrYD_A" supplier="_DH0AkKaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ycj3IKkLEe-JnuutqrYD_A" client="_NXc3oKkJEe-JnuutqrYD_A" supplier="_DH3q8aaoEe-4j-wKsEki3A"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_671wEKpJEe-pk5ikTPT5uQ" client="_NSeRAKkJEe-JnuutqrYD_A" supplier="_7mABEKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_7DBWIKpJEe-pk5ikTPT5uQ" client="_NN9kcKkJEe-JnuutqrYD_A" supplier="_7mABEKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_7HniQKpJEe-pk5ikTPT5uQ" client="_NcmdYKkJEe-JnuutqrYD_A" supplier="_7mABEKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_7OdxIKpJEe-pk5ikTPT5uQ" client="_AMD-8KkKEe-JnuutqrYD_A" supplier="_7mABEKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_70gdcKpJEe-pk5ikTPT5uQ" client="_NXc3oKkJEe-JnuutqrYD_A" supplier="_EmfKIKl-Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9rM5UKpJEe-pk5ikTPT5uQ" client="_NSeRAKkJEe-JnuutqrYD_A" supplier="_SmaBoKl-Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_9vfjcKpJEe-pk5ikTPT5uQ" client="_NN9kcKkJEe-JnuutqrYD_A" supplier="_SmaBoKl-Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_97ILsKpJEe-pk5ikTPT5uQ" client="_NcmdYKkJEe-JnuutqrYD_A" supplier="_SmaBoKl-Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_-AnvsKpJEe-pk5ikTPT5uQ" client="_AMD-8KkKEe-JnuutqrYD_A" supplier="_SmaBoKl-Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_-a2NkKpJEe-pk5ikTPT5uQ" client="_NXc3oKkJEe-JnuutqrYD_A" supplier="_YlU3IKl-Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="__0PpcKpJEe-pk5ikTPT5uQ" client="_FsQjAKkIEe-JnuutqrYD_A" supplier="_UGPSIKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="__7-pIKpJEe-pk5ikTPT5uQ" client="_DqwlUKkIEe-JnuutqrYD_A" supplier="_UGPSIKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_ACIUcKpKEe-pk5ikTPT5uQ" client="_Q7ClEKkHEe-JnuutqrYD_A" supplier="_UGPSIKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_BJBrEKpKEe-pk5ikTPT5uQ" client="_NSeRAKkJEe-JnuutqrYD_A" supplier="_ZiBlYKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_BNU8QKpKEe-pk5ikTPT5uQ" client="_NN9kcKkJEe-JnuutqrYD_A" supplier="_ZiBlYKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_BeOfAKpKEe-pk5ikTPT5uQ" client="_NcmdYKkJEe-JnuutqrYD_A" supplier="_ZiBlYKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_BkrsUKpKEe-pk5ikTPT5uQ" client="_AMD-8KkKEe-JnuutqrYD_A" supplier="_ZiBlYKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_CSSZMKpKEe-pk5ikTPT5uQ" client="_NXc3oKkJEe-JnuutqrYD_A" supplier="_aAcmwKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_DojokKpKEe-pk5ikTPT5uQ" client="_Q7ClEKkHEe-JnuutqrYD_A" supplier="_1iwsQKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_Du4TAKpKEe-pk5ikTPT5uQ" client="_FsQjAKkIEe-JnuutqrYD_A" supplier="_1iwsQKl9Ee-MOu4ftYJMtg"/>
+        <packagedElement xmi:type="uml:Abstraction" xmi:id="_D0JNgKpKEe-pk5ikTPT5uQ" client="_DqwlUKkIEe-JnuutqrYD_A" supplier="_1iwsQKl9Ee-MOu4ftYJMtg"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_9CbCkKkLEe-JnuutqrYD_A" name="2 Subsystem Structure">
+        <packagedElement xmi:type="uml:Package" xmi:id="_AYRPgKl5Ee-mQ6Jyw3Zeww" name="1 Logical Interfaces">
+          <packagedElement xmi:type="uml:Class" xmi:id="_bG3JwKkQEe-JnuutqrYD_A" name="ProcessingAction">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_eRIgMKl6Ee-g3fenb6tqyA" name="cmda" visibility="public" type="_xMJ1MKl5Ee-g3fenb6tqyA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_buPk8KkzEe-mQ6Jyw3Zeww" name="ActuatorsOut">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_ejWRkKl6Ee-g3fenb6tqyA" name="cmd" visibility="public" type="_FALLMKa6Ee-4j-wKsEki3A"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_H5vSUKl4Ee-mQ6Jyw3Zeww" name="Action">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_oan4sKl6Ee-g3fenb6tqyA" name="pwm" visibility="public" type="_r0EEQKl7Ee-g3fenb6tqyA"/>
+          </packagedElement>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_OL9hIKkyEe-mQ6Jyw3Zeww" name="2 Exchange Items">
+          <packagedElement xmi:type="uml:Class" xmi:id="_Vb55oKkyEe-mQ6Jyw3Zeww" name="Accelerator">
+            <generalization xmi:type="uml:Generalization" xmi:id="_37640Kl5Ee-g3fenb6tqyA" general="_xMJ1MKl5Ee-g3fenb6tqyA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_j2ro4Kl5Ee-g3fenb6tqyA" name="Brakes">
+            <generalization xmi:type="uml:Generalization" xmi:id="_4V9wgKl5Ee-g3fenb6tqyA" general="_xMJ1MKl5Ee-g3fenb6tqyA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_kKn4kKl5Ee-g3fenb6tqyA" name="Steering ">
+            <generalization xmi:type="uml:Generalization" xmi:id="_4wOqoKl5Ee-g3fenb6tqyA" general="_xMJ1MKl5Ee-g3fenb6tqyA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_kaSFMKl5Ee-g3fenb6tqyA" name="Transmission">
+            <generalization xmi:type="uml:Generalization" xmi:id="_5Svh0Kl5Ee-g3fenb6tqyA" general="_xMJ1MKl5Ee-g3fenb6tqyA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_xMJ1MKl5Ee-g3fenb6tqyA" name="Command Action"/>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_L2QD0Kl7Ee-g3fenb6tqyA" name="SensorStatus"/>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_L2QD0al7Ee-g3fenb6tqyA" name="Start">
+            <generalization xmi:type="uml:Generalization" xmi:id="_T03gMKl7Ee-g3fenb6tqyA" general="_L2QD0Kl7Ee-g3fenb6tqyA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_L2Qq4Kl7Ee-g3fenb6tqyA" name="Stop">
+            <generalization xmi:type="uml:Generalization" xmi:id="_TeUBYKl7Ee-g3fenb6tqyA" general="_L2QD0Kl7Ee-g3fenb6tqyA"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Signal" xmi:id="_r0EEQKl7Ee-g3fenb6tqyA" name="PWM"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_GyToQKkMEe-JnuutqrYD_A" name="Self-Driving System Architecture">
+          <generalization xmi:type="uml:Generalization" xmi:id="_7wsDAKkNEe-JnuutqrYD_A" general="_so1_gKavEe-4j-wKsEki3A"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_ZlBq8KkNEe-JnuutqrYD_A" name=": iUserDataInlet" type="_kMGtoKa4Ee-4j-wKsEki3A" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_bML2AKkNEe-JnuutqrYD_A" name=": iCargoDataInlet" type="_QmI20Ka8Ee-4j-wKsEki3A" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_d0Z1cKkNEe-JnuutqrYD_A" name=": OutputInfo" aggregation="composite">
+            <type xmi:type="uml:Class" href="../car/VehicleCCU_Solution1.uml#_dRD_YIlyEe-5zvke16im0Q"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_fHsCQKkNEe-JnuutqrYD_A" name=": iInternalControl" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Q5mWcqkOEe-JnuutqrYD_A" name="central computing unit" type="_3Qo_QKkNEe-JnuutqrYD_A" aggregation="composite" association="_Q5lvYKkOEe-JnuutqrYD_A">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Q5mWc6kOEe-JnuutqrYD_A"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Q5mWdKkOEe-JnuutqrYD_A" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_S7yeYKkTEe-mQ6Jyw3Zeww" name="electronic control units" type="_Z3MOcKkMEe-JnuutqrYD_A" aggregation="composite" association="_S7u0AKkTEe-mQ6Jyw3Zeww">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S7zFcKkTEe-mQ6Jyw3Zeww"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_S7zsgKkTEe-mQ6Jyw3Zeww" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_xDHtQKkyEe-mQ6Jyw3Zeww" name="electronic Control Units" type="_Z3MOcKkMEe-JnuutqrYD_A"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_TnJiAKkzEe-mQ6Jyw3Zeww" name="actuators" type="_Ks7ZAKkzEe-mQ6Jyw3Zeww" aggregation="composite" association="_TnIT4KkzEe-mQ6Jyw3Zeww">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_TnJiAakzEe-mQ6Jyw3Zeww"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_TnJiAqkzEe-mQ6Jyw3Zeww" value="1"/>
+          </ownedAttribute>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_gGxOwKkPEe-JnuutqrYD_A" name="Connector11">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_gG0SEKkPEe-JnuutqrYD_A" role="_ZlBq8KkNEe-JnuutqrYD_A"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_gG05IKkPEe-JnuutqrYD_A" partWithPort="_Q5mWcqkOEe-JnuutqrYD_A" role="_NsgS4KkPEe-JnuutqrYD_A"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_g1R6kKkPEe-JnuutqrYD_A" name="Connector12">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_g1ShoKkPEe-JnuutqrYD_A" role="_bML2AKkNEe-JnuutqrYD_A"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_g1TIsKkPEe-JnuutqrYD_A" partWithPort="_Q5mWcqkOEe-JnuutqrYD_A" role="_PUMCYKkPEe-JnuutqrYD_A"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_hWpiQKkPEe-JnuutqrYD_A" name="Connector13">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_hWqwYKkPEe-JnuutqrYD_A" role="_fHsCQKkNEe-JnuutqrYD_A"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_hWqwYakPEe-JnuutqrYD_A" partWithPort="_Q5mWcqkOEe-JnuutqrYD_A" role="_Py9CAKkPEe-JnuutqrYD_A"/>
+          </ownedConnector>
+          <ownedConnector xmi:type="uml:Connector" xmi:id="_zoJ10KkyEe-mQ6Jyw3Zeww" name="Connector12">
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_zoLD8KkyEe-mQ6Jyw3Zeww" partWithPort="_Q5mWcqkOEe-JnuutqrYD_A" role="_lpDyoKkPEe-JnuutqrYD_A"/>
+            <end xmi:type="uml:ConnectorEnd" xmi:id="_zoLD8akyEe-mQ6Jyw3Zeww" partWithPort="_xDHtQKkyEe-mQ6Jyw3Zeww" role="_lpDyoKkPEe-JnuutqrYD_A"/>
+          </ownedConnector>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Z3MOcKkMEe-JnuutqrYD_A" name="Electronic Control Units">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_lpDyoKkPEe-JnuutqrYD_A" name=": ProcessingAction" type="_bG3JwKkQEe-JnuutqrYD_A" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_P48kkKl4Ee-mQ6Jyw3Zeww" name=": Action" type="_H5vSUKl4Ee-mQ6Jyw3Zeww" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_3Qo_QKkNEe-JnuutqrYD_A" name="Central Computing Unit">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_NsgS4KkPEe-JnuutqrYD_A" name=": iUserDataInlet" type="_kMGtoKa4Ee-4j-wKsEki3A" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_PUMCYKkPEe-JnuutqrYD_A" name=": iCargoDataInlet" type="_QmI20Ka8Ee-4j-wKsEki3A" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Py9CAKkPEe-JnuutqrYD_A" name=": iInternalControl" type="_-GEtkKa-Ee-4j-wKsEki3A" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_47u10KkSEe-mQ6Jyw3Zeww" name=": ProcessingAction" type="_bG3JwKkQEe-JnuutqrYD_A" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_JIQzMKkxEe-mQ6Jyw3Zeww" name=": OutputInfo" aggregation="composite">
+            <type xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_w9HIoKUQEe-kGc-Z8FcZ5g"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_nPJO8Kl4Ee-mQ6Jyw3Zeww" name=": ActuatorsOut" type="_buPk8KkzEe-mQ6Jyw3Zeww" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_rB9ZQKl4Ee-mQ6Jyw3Zeww" name=": Output Info" aggregation="composite">
+            <type xmi:type="uml:Class" href="SelfDrivingTruck_Problem.uml#_w9HIoKUQEe-kGc-Z8FcZ5g"/>
+          </ownedAttribute>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_Ks7ZAKkzEe-mQ6Jyw3Zeww" name="Actuators">
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_Ks7ZAakzEe-mQ6Jyw3Zeww" name=":  Action" type="_H5vSUKl4Ee-mQ6Jyw3Zeww" aggregation="composite"/>
+          <ownedAttribute xmi:type="uml:Port" xmi:id="_jhgF4KkzEe-mQ6Jyw3Zeww" name=": ActuatorsOut" type="_buPk8KkzEe-mQ6Jyw3Zeww" aggregation="composite"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_Q5lvYKkOEe-JnuutqrYD_A" memberEnd="_Q5mWcqkOEe-JnuutqrYD_A _Q5m9gKkOEe-JnuutqrYD_A">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Q5mWcKkOEe-JnuutqrYD_A" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Q5mWcakOEe-JnuutqrYD_A" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_Q5m9gKkOEe-JnuutqrYD_A" name="self-driving system architecture" type="_GyToQKkMEe-JnuutqrYD_A" association="_Q5lvYKkOEe-JnuutqrYD_A"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_S7u0AKkTEe-mQ6Jyw3Zeww" memberEnd="_S7yeYKkTEe-mQ6Jyw3Zeww _S7zsgakTEe-mQ6Jyw3Zeww">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_S7xQQKkTEe-mQ6Jyw3Zeww" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_S7x3UKkTEe-mQ6Jyw3Zeww" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_S7zsgakTEe-mQ6Jyw3Zeww" name="self-driving system architecture" type="_GyToQKkMEe-JnuutqrYD_A" association="_S7u0AKkTEe-mQ6Jyw3Zeww"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_TnIT4KkzEe-mQ6Jyw3Zeww" memberEnd="_TnJiAKkzEe-mQ6Jyw3Zeww _TnJiA6kzEe-mQ6Jyw3Zeww">
+          <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_TnI68KkzEe-mQ6Jyw3Zeww" source="org.eclipse.papyrus">
+            <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_TnI68akzEe-mQ6Jyw3Zeww" key="nature" value="UML_Nature"/>
+          </eAnnotations>
+          <ownedEnd xmi:type="uml:Property" xmi:id="_TnJiA6kzEe-mQ6Jyw3Zeww" name="self-driving system architecture" type="_GyToQKkMEe-JnuutqrYD_A" association="_TnIT4KkzEe-mQ6Jyw3Zeww"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_fI8nEKl8Ee-g3fenb6tqyA" name="3 Subsystem Behavior">
+        <packagedElement xmi:type="uml:StateMachine" xmi:id="_SXcOAKl9Ee-MOu4ftYJMtg" name="Self-driving System States">
+          <region xmi:type="uml:Region" xmi:id="_Sm7bgKl9Ee-MOu4ftYJMtg" name="Self-Driving">
+            <transition xmi:type="uml:Transition" xmi:id="_xW_2cKl9Ee-MOu4ftYJMtg" source="_UY0P4Kl9Ee-MOu4ftYJMtg" target="_ZyXugKl9Ee-MOu4ftYJMtg"/>
+            <transition xmi:type="uml:Transition" xmi:id="_1iwsQKl9Ee-MOu4ftYJMtg" name="Activate Autonomy" source="_ZyXugKl9Ee-MOu4ftYJMtg" target="_UGPSIKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_l9iIMKmbEe-NM6ArSxvnaA" name="carDriving" event="_tNQYEKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_7mABEKl9Ee-MOu4ftYJMtg" name="Detect Obstacle" source="_UGPSIKl9Ee-MOu4ftYJMtg" target="_ZiBlYKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_sPtQ4KmbEe-NM6ArSxvnaA" name="carDriverting" event="_8r7FgKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_EmfKIKl-Ee-MOu4ftYJMtg" name="Reach Destination" source="_UGPSIKl9Ee-MOu4ftYJMtg" target="_aAcmwKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_1s3H0KmbEe-NM6ArSxvnaA" name="CarParking" event="_15WlgKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_Kt070Kl-Ee-MOu4ftYJMtg" name="System Failure" source="_ZiBlYKl9Ee-MOu4ftYJMtg" target="_ZUPoEKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_iCq1IKmbEe-NM6ArSxvnaA" name="carError" event="_aQlSsKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_LYfpcKl-Ee-MOu4ftYJMtg" name="System Failure" source="_UGPSIKl9Ee-MOu4ftYJMtg" target="_ZUPoEKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_hM2ncKmbEe-NM6ArSxvnaA" name="carError" event="_aQlSsKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_LzmREKl-Ee-MOu4ftYJMtg" name="System Failure" source="_aAcmwKl9Ee-MOu4ftYJMtg" target="_ZUPoEKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_gR8eYKmbEe-NM6ArSxvnaA" name="carError" event="_aQlSsKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_SmaBoKl-Ee-MOu4ftYJMtg" name="Obstacle Cleared" source="_ZiBlYKl9Ee-MOu4ftYJMtg" target="_UGPSIKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_uEr1gKmbEe-NM6ArSxvnaA" name="CarDriving" event="_tNQYEKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_YlU3IKl-Ee-MOu4ftYJMtg" name="Complete Parking" source="_aAcmwKl9Ee-MOu4ftYJMtg" target="_ZyXugKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_d3ccwKmZEe-NM6ArSxvnaA" name="carOff" event="_JucWEKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <transition xmi:type="uml:Transition" xmi:id="_ZZ6VwKl-Ee-MOu4ftYJMtg" name="Restart System" source="_ZUPoEKl9Ee-MOu4ftYJMtg" target="_ZyXugKl9Ee-MOu4ftYJMtg">
+              <trigger xmi:type="uml:Trigger" xmi:id="_d1RAkKmbEe-NM6ArSxvnaA" name="carOff" event="_JucWEKm4Ee--JaHz9kxgGA"/>
+            </transition>
+            <subvertex xmi:type="uml:State" xmi:id="_UGPSIKl9Ee-MOu4ftYJMtg" name="Driving"/>
+            <subvertex xmi:type="uml:Pseudostate" xmi:id="_UY0P4Kl9Ee-MOu4ftYJMtg"/>
+            <subvertex xmi:type="uml:State" xmi:id="_ZUPoEKl9Ee-MOu4ftYJMtg" name="Error"/>
+            <subvertex xmi:type="uml:State" xmi:id="_ZiBlYKl9Ee-MOu4ftYJMtg" name="Obstacle"/>
+            <subvertex xmi:type="uml:State" xmi:id="_ZyXugKl9Ee-MOu4ftYJMtg" name="StandBy"/>
+            <subvertex xmi:type="uml:State" xmi:id="_aAcmwKl9Ee-MOu4ftYJMtg" name="Parking"/>
+          </region>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_8kjHoKm3Ee--JaHz9kxgGA" name="Events" URI="">
+          <packagedElement xmi:type="uml:SignalEvent" xmi:id="_JucWEKm4Ee--JaHz9kxgGA" name="Off"/>
+          <packagedElement xmi:type="uml:SignalEvent" xmi:id="_aQlSsKm4Ee--JaHz9kxgGA" name="Error"/>
+          <packagedElement xmi:type="uml:CallEvent" xmi:id="_tNQYEKm4Ee--JaHz9kxgGA" name="Driving"/>
+          <packagedElement xmi:type="uml:CallEvent" xmi:id="_15WlgKm4Ee--JaHz9kxgGA" name="Parking"/>
+          <packagedElement xmi:type="uml:CallEvent" xmi:id="_8r7FgKm4Ee--JaHz9kxgGA" name="Driverting"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_S_eksKpJEe-pk5ikTPT5uQ" name="4 Tracebility"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i9lFkJryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i9ov8JryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_4LoJryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_4ysJryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//activities"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Activities"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_5ZwJryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_5ZwZryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//allocations"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Allocations"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_6A0JryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_6A0ZryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//blocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Blocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_6A0pryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_6A05ryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//constraintblocks"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ConstraintBlocks"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_6n4JryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_6n4ZryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//deprecatedelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_DeprecatedElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_6n4pryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_6n45ryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//modelelements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_ModelElements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_7O8JryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_7O8ZryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//portsandflows"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Ports_u0026Flows"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_7O8pryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_72AJryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.6/SysML#//requirements"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://SysML16_PROFILES/SysML.profile.uml#SysML.package_packagedElement_Requirements"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_i_72AZryEe-bJflXXd2nVw">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_i_72ApryEe-bJflXXd2nVw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_DRS40Kl-Ee-MOu4ftYJMtg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DRS40al-Ee-MOu4ftYJMtg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+    </profileApplication>
+  </uml:Model>
+  <Requirements:Requirement xmi:id="_fnX_UKUlEe-iJ-17iO8wJg" base_NamedElement="_fmBUcKUlEe-iJ-17iO8wJg" id="SR-1" base_Class="_fmBUcKUlEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="_sLVc4KUqEe-iJ-17iO8wJg" base_NamedElement="_sLRygKUqEe-iJ-17iO8wJg" id="SR-1.1" text="Quando o sistema de condução autónoma está em operação, deverá ser capaz de operar no Nível 3 da norma SAE, permitindo controlo autónomo com intervenção humana limitada." base_Class="_sLRygKUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="__GBlQKUqEe-iJ-17iO8wJg" base_NamedElement="__F8FsKUqEe-iJ-17iO8wJg" id="SR-1.2" text="Quando o sistema de condução autónoma está em operação, deverá ser capaz de operar no Nível 4 da norma SAE, oferecendo controlo totalmente autónomo em áreas geograficamente definidas, sem necessidade de intervenção humana." base_Class="__F8FsKUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="__OaFMKUqEe-iJ-17iO8wJg" base_NamedElement="__OYQAKUqEe-iJ-17iO8wJg" id="SR-1.3" text="Sempre que necessário, o sistema deverá ajustar dinamicamente (aumentar ou diminuir) a velocidade para garantir segurança e eficiência na condução." base_Class="__OYQAKUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="__TNswqUqEe-iJ-17iO8wJg" base_NamedElement="__TMekKUqEe-iJ-17iO8wJg" id="SR-1.4" text="Quando um acidente iminente for detetado, o sistema deverá ativar automaticamente os airbags para assegurar a proteção dos passageiros." base_Class="__TMekKUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="__VVMn6UqEe-iJ-17iO8wJg" base_NamedElement="__VT-cKUqEe-iJ-17iO8wJg" id="SR-1.5" text="Sempre que os passageiros ocuparem os seus assentos, o sistema deverá verificar automaticamente se os cintos de segurança estão corretamente colocados para garantir a segurança de todos os ocupantes." base_Class="__VT-cKUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="__Yl7-qUqEe-iJ-17iO8wJg" base_NamedElement="__Ykt0KUqEe-iJ-17iO8wJg" id="SR-1.6" text="Quando solicitado, o sistema deverá transportar cargas até ao local de destino desejado com precisão e segurança." base_Class="__Ykt0KUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="__ZcQgKUqEe-iJ-17iO8wJg" base_NamedElement="__ZabUKUqEe-iJ-17iO8wJg" id="SR-1.9" text="Sempre que necessário, o sistema deverá monitorizar automaticamente a pressão dos pneus, o nível de óleo, a saúde da bateria e o estado dos travões, alertando sobre a necessidade de manutenção preventiva." base_Class="__ZabUKUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="__axtUqUqEe-iJ-17iO8wJg" base_NamedElement="__awfIKUqEe-iJ-17iO8wJg" id="SR-1.7" text="Sempre que a carga for carregada, o sistema deverá garantir que o processo seja realizado de forma segura." base_Class="__awfIKUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="__cXosKUqEe-iJ-17iO8wJg" base_NamedElement="__cVzgKUqEe-iJ-17iO8wJg" id="SR-1.8" text="Sempre que a carga for descarregada, o sistema deverá garantir que o processo seja realizado de forma segura." base_Class="__cVzgKUqEe-iJ-17iO8wJg"/>
+  <Requirements:Requirement xmi:id="_DH45EKaoEe-4j-wKsEki3A" base_NamedElement="_DH0AkKaoEe-4j-wKsEki3A" id="SR-1.10" text="Sempre que uma situação inesperada ocorrer, o sistema deverá responder no tempo máximo de 0,1 segundos para minimizar o impacto." base_Class="_DH0AkKaoEe-4j-wKsEki3A"/>
+  <Requirements:Requirement xmi:id="_DH7VUKaoEe-4j-wKsEki3A" base_NamedElement="_DH1OsKaoEe-4j-wKsEki3A" id="SR-1.11" text="Sempre que houver mudanças relevantes no estado do veículo, o sistema deverá fornecer alertas e relatórios atualizados para facilitar o acompanhamento do seu funcionamento." base_Class="_DH1OsKaoEe-4j-wKsEki3A"/>
+  <Requirements:Requirement xmi:id="_DH8jcKaoEe-4j-wKsEki3A" base_NamedElement="_DH2c0KaoEe-4j-wKsEki3A" id="SR-1.12" text="Sempre que o sistema estiver em operação, deverá otimizar o consumo de combustível para utilizar a menor quantidade possível, reduzindo custos e impacto ambiental." base_Class="_DH2c0KaoEe-4j-wKsEki3A"/>
+  <Requirements:Requirement xmi:id="_DH9KgKaoEe-4j-wKsEki3A" base_NamedElement="_DH3q8KaoEe-4j-wKsEki3A" id="SR-1.13" text="Sempre que estiver em operação, o sistema deverá manter uma taxa de acidentes inferior a 1% em relação ao padrão da indústria para assegurar altos níveis de segurança." base_Class="_DH3q8KaoEe-4j-wKsEki3A"/>
+  <Requirements:Requirement xmi:id="_DH-YoKaoEe-4j-wKsEki3A" base_NamedElement="_DH3q8aaoEe-4j-wKsEki3A" id="SR-1.14" text="Sempre que realizar entregas, o sistema deverá cumpri-las dentro do prazo previsto ou antes, garantindo uma taxa de sucesso superior a 99%." base_Class="_DH3q8aaoEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_b-bC4KaqEe-4j-wKsEki3A" base_Abstraction="_b-ZNsKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_cITXoKaqEe-4j-wKsEki3A" base_Abstraction="_cISwkKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_ch1R8KaqEe-4j-wKsEki3A" base_Abstraction="_ch0q4KaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_cx5uQKaqEe-4j-wKsEki3A" base_Abstraction="_cx4gIKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_c_OYkKaqEe-4j-wKsEki3A" base_Abstraction="_c_NxgKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_dcb5AKaqEe-4j-wKsEki3A" base_Abstraction="_dcbR8KaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_hLeWkKaqEe-4j-wKsEki3A" base_Abstraction="_hLdvgKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_hZgykKaqEe-4j-wKsEki3A" base_Abstraction="_hZfkcKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_h-a2cKaqEe-4j-wKsEki3A" base_Abstraction="_h-ZoUKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_ibE9QKaqEe-4j-wKsEki3A" base_Abstraction="_ibEWMKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_i2wzsKaqEe-4j-wKsEki3A" base_Abstraction="_i2wMoKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_jO7cEKaqEe-4j-wKsEki3A" base_Abstraction="_jO61AKaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_jdQL8KaqEe-4j-wKsEki3A" base_Abstraction="_jdPk4KaqEe-4j-wKsEki3A"/>
+  <standard:Refine xmi:id="_j46NMKaqEe-4j-wKsEki3A" base_Abstraction="_j45mIKaqEe-4j-wKsEki3A"/>
+  <Blocks:Block xmi:id="_RCLlgKavEe-4j-wKsEki3A" base_Class="_RCGF8KavEe-4j-wKsEki3A"/>
+  <Blocks:Block xmi:id="_VALsIKavEe-4j-wKsEki3A" base_Class="_VAHasKavEe-4j-wKsEki3A"/>
+  <Blocks:Block xmi:id="_mdpokKavEe-4j-wKsEki3A" base_Class="_mdjh8KavEe-4j-wKsEki3A"/>
+  <Blocks:Block xmi:id="_rP7EwKavEe-4j-wKsEki3A" base_Class="_rP4ogKavEe-4j-wKsEki3A"/>
+  <Blocks:Block xmi:id="_so30sKavEe-4j-wKsEki3A" base_Class="_so1_gKavEe-4j-wKsEki3A"/>
+  <Blocks:Block xmi:id="_Bgo0IKa4Ee-4j-wKsEki3A" base_Class="_Bgm-8Ka4Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_kMH7wKa4Ee-4j-wKsEki3A" base_Class="_kMGtoKa4Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:FlowProperty xmi:id="_kMKYAKa4Ee-4j-wKsEki3A" base_Property="_kMGtoaa4Ee-4j-wKsEki3A" direction="in"/>
+  <PortsAndFlows:ProxyPort xmi:id="_kCaJoKa5Ee-4j-wKsEki3A" base_Port="_kCXtYKa5Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_f8yioKa6Ee-4j-wKsEki3A" base_Class="_f8x7kKa6Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:FlowProperty xmi:id="_f8zwwKa6Ee-4j-wKsEki3A" base_Property="_f8x7kaa6Ee-4j-wKsEki3A" direction="in"/>
+  <PortsAndFlows:FlowProperty xmi:id="_rtnFUKa6Ee-4j-wKsEki3A" base_Property="_rtkpEKa6Ee-4j-wKsEki3A" direction="in"/>
+  <PortsAndFlows:ProxyPort xmi:id="_6hfwYKa6Ee-4j-wKsEki3A" base_Port="_6hd7MKa6Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_UV3tYKa7Ee-4j-wKsEki3A" base_Class="_UV2fQKa7Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:FlowProperty xmi:id="_UV5ikKa7Ee-4j-wKsEki3A" base_Property="_UV2fQaa7Ee-4j-wKsEki3A" direction="out"/>
+  <PortsAndFlows:ProxyPort xmi:id="_ceh2kKa7Ee-4j-wKsEki3A" base_Port="_cegocKa7Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_kxkDwKa7Ee-4j-wKsEki3A" base_Class="_kxjcsKa7Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:FlowProperty xmi:id="_kxl48Ka7Ee-4j-wKsEki3A" base_Property="_kxjcsaa7Ee-4j-wKsEki3A" direction="out"/>
+  <PortsAndFlows:FlowProperty xmi:id="_kxmgAKa7Ee-4j-wKsEki3A" base_Property="_kxjcsqa7Ee-4j-wKsEki3A" direction="out"/>
+  <PortsAndFlows:ProxyPort xmi:id="_yiLT8Ka7Ee-4j-wKsEki3A" base_Port="_yiJewKa7Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_JrQvYKa8Ee-4j-wKsEki3A" base_Port="_JrOTIKa8Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_QmJd4Ka8Ee-4j-wKsEki3A" base_Class="_QmI20Ka8Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:FlowProperty xmi:id="_QmMhMKa8Ee-4j-wKsEki3A" base_Property="_QmI20aa8Ee-4j-wKsEki3A" direction="in"/>
+  <Blocks:Block xmi:id="_dr1hwKa8Ee-4j-wKsEki3A" base_Class="_drzFgKa8Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_twaYoKa8Ee-4j-wKsEki3A" base_Port="_twYjcKa8Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_0ne-IKa8Ee-4j-wKsEki3A" base_Port="_0ndI8Ka8Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_D0n2sKa9Ee-4j-wKsEki3A" base_Class="_D0lacKa9Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:FlowProperty xmi:id="_D0sIIKa9Ee-4j-wKsEki3A" base_Property="_D0lacaa9Ee-4j-wKsEki3A" direction="out"/>
+  <PortsAndFlows:ProxyPort xmi:id="_XABUkKa9Ee-4j-wKsEki3A" base_Port="_W__fYKa9Ee-4j-wKsEki3A"/>
+  <Blocks:Block xmi:id="_u4WboKa9Ee-4j-wKsEki3A" base_Class="_u4TYUKa9Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_-GEtkqa-Ee-4j-wKsEki3A" base_Class="_-GEtkKa-Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:FlowProperty xmi:id="_-GGiwKa-Ee-4j-wKsEki3A" base_Property="_-GEtkaa-Ee-4j-wKsEki3A" direction="in"/>
+  <PortsAndFlows:ProxyPort xmi:id="_amh2UKa_Ee-4j-wKsEki3A" base_Port="_amfaEKa_Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_fSgdQKa_Ee-4j-wKsEki3A" base_Port="_fSeoEKa_Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_h95sgKa_Ee-4j-wKsEki3A" base_Port="_h933UKa_Ee-4j-wKsEki3A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_kbHV0Ka_Ee-4j-wKsEki3A" base_Port="_kbFgoKa_Ee-4j-wKsEki3A"/>
+  <ConstraintBlocks:ConstraintBlock xmi:id="_wxRygKbFEe-4j-wKsEki3A" base_Class="_wxPWQKbFEe-4j-wKsEki3A"/>
+  <Requirements:Requirement xmi:id="_Eie7sKkBEe-JnuutqrYD_A" base_NamedElement="_EieUoKkBEe-JnuutqrYD_A" id="SR-1.15" text="O sistema deve consumir um máximo de 0.4 l/km." base_Class="_EieUoKkBEe-JnuutqrYD_A"/>
+  <Requirements:Refine xmi:id="_jfmesKkCEe-JnuutqrYD_A" base_DirectedRelationship="_jfjbYKkCEe-JnuutqrYD_A" base_Abstraction="_jfjbYKkCEe-JnuutqrYD_A"/>
+  <Requirements:Refine xmi:id="_DkBoAKkEEe-JnuutqrYD_A" base_DirectedRelationship="_Dj_y0KkEEe-JnuutqrYD_A" base_Abstraction="_Dj_y0KkEEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_HteewKkGEe-JnuutqrYD_A" base_Abstraction="_HtcpkKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_HxL6EKkGEe-JnuutqrYD_A" base_Abstraction="_HxKr8KkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_IXrSUKkGEe-JnuutqrYD_A" base_Abstraction="_IXqrQKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_KvyZMakGEe-JnuutqrYD_A" base_Abstraction="_KvyZMKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_LwUCEakGEe-JnuutqrYD_A" base_Abstraction="_LwUCEKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_L_BMcKkGEe-JnuutqrYD_A" base_Abstraction="_L-_-UKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_MIZx8KkGEe-JnuutqrYD_A" base_Abstraction="_MIYj0KkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_M7ZVIKkGEe-JnuutqrYD_A" base_Abstraction="_M7YHAKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_NwiNYKkGEe-JnuutqrYD_A" base_Abstraction="_NwhmUKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_QATQkKkGEe-JnuutqrYD_A" base_Abstraction="_QASpgKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_QyoscKkGEe-JnuutqrYD_A" base_Abstraction="_QyoFYKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_RTKmoKkGEe-JnuutqrYD_A" base_Abstraction="_RTJ_kKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_SlKaAKkGEe-JnuutqrYD_A" base_Abstraction="_SlJy8KkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_TOo00KkGEe-JnuutqrYD_A" base_Abstraction="_TOoNwKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_TWkBwKkGEe-JnuutqrYD_A" base_Abstraction="_TWjasKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_TfetMakGEe-JnuutqrYD_A" base_Abstraction="_TfetMKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_W7uKkKkGEe-JnuutqrYD_A" base_Abstraction="_W7s8cKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_XzL-EKkGEe-JnuutqrYD_A" base_Abstraction="_XzKv8KkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_X8j8gKkGEe-JnuutqrYD_A" base_Abstraction="_X8iHUKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_YL9qcKkGEe-JnuutqrYD_A" base_Abstraction="_YL9DYKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_aHFTUKkGEe-JnuutqrYD_A" base_Abstraction="_aHEFMKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_bXytQKkGEe-JnuutqrYD_A" base_Abstraction="_bXyGMKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_biTUIakGEe-JnuutqrYD_A" base_Abstraction="_biTUIKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_eVplgKkGEe-JnuutqrYD_A" base_Abstraction="_eVo-cKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_iym5AakGEe-JnuutqrYD_A" base_Abstraction="_iym5AKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_j89MQKkGEe-JnuutqrYD_A" base_Abstraction="_j87-IKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_ocn1gKkGEe-JnuutqrYD_A" base_Abstraction="_ocnOcKkGEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_t_u4wKkGEe-JnuutqrYD_A" base_Abstraction="_t_tqoKkGEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_GT2j8KkHEe-JnuutqrYD_A" base_NamedElement="_GT0HsKkHEe-JnuutqrYD_A" base_Class="_GT0HsKkHEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_Q7EaQKkHEe-JnuutqrYD_A" base_NamedElement="_Q7ClEKkHEe-JnuutqrYD_A" id="SSR-1.1" text="Quando o sistema de condução autónoma está em operação, deverá ser capaz de operar no Nível 3 ou 4." base_Class="_Q7ClEKkHEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_RjpdMKkHEe-JnuutqrYD_A" base_NamedElement="_RjnA8KkHEe-JnuutqrYD_A" id="SSR-1.4" text="O sistema deve consumir um máximo de 0.4 l/km." base_Class="_RjnA8KkHEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_DqzBkKkIEe-JnuutqrYD_A" base_NamedElement="_DqwlUKkIEe-JnuutqrYD_A" id="SSR-1.1.1" text="Quando o sistema de condução autónoma está em operação, deverá ser capaz de operar no Nível 3 da norma SAE, permitindo controlo autónomo com intervenção humana limitada." base_Class="_DqwlUKkIEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_FsRKEKkIEe-JnuutqrYD_A" base_NamedElement="_FsQjAKkIEe-JnuutqrYD_A" id="SSR-1.1.2" text="Quando o sistema de condução autónoma está em operação, deverá ser capaz de operar no Nível 4 da norma SAE, oferecendo controlo totalmente autónomo em áreas geograficamente definidas, sem necessidade de intervenção humana." base_Class="_FsQjAKkIEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_NN_ZoKkJEe-JnuutqrYD_A" base_NamedElement="_NN9kcKkJEe-JnuutqrYD_A" id="SSR-1.2.1" text="O sistema deverá identificar obstáculos estáticos e móveis em um raio de pelo menos 200 metros, garantindo detecção precisa em todas as direções ao redor do veículo." base_Class="_NN9kcKkJEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_NSeRAakJEe-JnuutqrYD_A" base_NamedElement="_NSeRAKkJEe-JnuutqrYD_A" id="SSR-1.3" text="O sistema deverá identificar obstáculos estáticos e móveis em um raio de pelo menos 200 metros, utilizando sensores LiDAR, câmeras RGB, radares e sensores ultrassônicos, mesmo em condições adversas, como chuva, neblina, neve e luz solar intensa." base_Class="_NSeRAKkJEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_NXc3oakJEe-JnuutqrYD_A" base_NamedElement="_NXc3oKkJEe-JnuutqrYD_A" id="SSR-1.3" text="O sistema deverá calcular rotas otimizadas em tempo real, considerando condições de tráfego, limites de velocidade e restrições geográficas, para assegurar uma navegação eficiente e segura." base_Class="_NXc3oKkJEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_NcnrgKkJEe-JnuutqrYD_A" base_NamedElement="_NcmdYKkJEe-JnuutqrYD_A" id="SSR-1.2.2" text="O sistema deve consumir um máximo de 0.4 l/km." base_Class="_NcmdYKkJEe-JnuutqrYD_A"/>
+  <Requirements:Requirement xmi:id="_AMEmAKkKEe-JnuutqrYD_A" base_NamedElement="_AMD-8KkKEe-JnuutqrYD_A" id="SSR-1.2.3" text="O sistema deverá operar de forma confiável em condições adversas, incluindo chuva, neblina, neve e luz solar intensa, sem comprometer a precisão na detecção de obstáculos.&#xD;&#xA;" base_Class="_AMD-8KkKEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="__1jG8KkKEe-JnuutqrYD_A" base_Abstraction="__1if4KkKEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_ABR10akLEe-JnuutqrYD_A" base_Abstraction="_ABR10KkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_DAjqYKkLEe-JnuutqrYD_A" base_Abstraction="_DAh1MKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_FU4dcKkLEe-JnuutqrYD_A" base_Abstraction="_FU3PUKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_SXlewKkLEe-JnuutqrYD_A" base_Abstraction="_SXk3sKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_SifHMKkLEe-JnuutqrYD_A" base_Abstraction="_SidSAKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_SrTsAKkLEe-JnuutqrYD_A" base_Abstraction="_SrTE8KkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_UdrokKkLEe-JnuutqrYD_A" base_Abstraction="_UdrBgKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_UiG1kKkLEe-JnuutqrYD_A" base_Abstraction="_UiGOgKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_Up774KkLEe-JnuutqrYD_A" base_Abstraction="_Up6twKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_VnuZ0KkLEe-JnuutqrYD_A" base_Abstraction="_VntywKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_V_JbUKkLEe-JnuutqrYD_A" base_Abstraction="_V_HmIKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_WCx-IKkLEe-JnuutqrYD_A" base_Abstraction="_WCwwAKkLEe-JnuutqrYD_A"/>
+  <standard:Refine xmi:id="_yckeMKkLEe-JnuutqrYD_A" base_Abstraction="_ycj3IKkLEe-JnuutqrYD_A"/>
+  <Blocks:Block xmi:id="_GyVdcKkMEe-JnuutqrYD_A" base_Class="_GyToQKkMEe-JnuutqrYD_A"/>
+  <Blocks:Block xmi:id="_Z3OqsKkMEe-JnuutqrYD_A" base_Class="_Z3MOcKkMEe-JnuutqrYD_A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_ZlDgJKkNEe-JnuutqrYD_A" base_Port="_ZlBq8KkNEe-JnuutqrYD_A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_bMNrMqkNEe-JnuutqrYD_A" base_Port="_bML2AKkNEe-JnuutqrYD_A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_fHuegqkNEe-JnuutqrYD_A" base_Port="_fHsCQKkNEe-JnuutqrYD_A"/>
+  <Blocks:Block xmi:id="_3QsCkKkNEe-JnuutqrYD_A" base_Class="_3Qo_QKkNEe-JnuutqrYD_A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_NsjWMKkPEe-JnuutqrYD_A" base_Port="_NsgS4KkPEe-JnuutqrYD_A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_PUOeoKkPEe-JnuutqrYD_A" base_Port="_PUMCYKkPEe-JnuutqrYD_A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_Py-3MKkPEe-JnuutqrYD_A" base_Port="_Py9CAKkPEe-JnuutqrYD_A"/>
+  <Blocks:NestedConnectorEnd xmi:id="_gG05IakPEe-JnuutqrYD_A" base_Element="_gG05IKkPEe-JnuutqrYD_A" propertyPath="_Q5mWcqkOEe-JnuutqrYD_A" base_ConnectorEnd="_gG05IKkPEe-JnuutqrYD_A"/>
+  <Blocks:NestedConnectorEnd xmi:id="_g1TIsakPEe-JnuutqrYD_A" base_Element="_g1TIsKkPEe-JnuutqrYD_A" propertyPath="_Q5mWcqkOEe-JnuutqrYD_A" base_ConnectorEnd="_g1TIsKkPEe-JnuutqrYD_A"/>
+  <Blocks:NestedConnectorEnd xmi:id="_hWqwYqkPEe-JnuutqrYD_A" base_Element="_hWqwYakPEe-JnuutqrYD_A" propertyPath="_Q5mWcqkOEe-JnuutqrYD_A" base_ConnectorEnd="_hWqwYakPEe-JnuutqrYD_A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_lpG18KkPEe-JnuutqrYD_A" base_Port="_lpDyoKkPEe-JnuutqrYD_A"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_bG7bMKkQEe-JnuutqrYD_A" base_Class="_bG3JwKkQEe-JnuutqrYD_A"/>
+  <PortsAndFlows:ProxyPort xmi:id="_471jgKkSEe-mQ6Jyw3Zeww" base_Port="_47u10KkSEe-mQ6Jyw3Zeww"/>
+  <PortsAndFlows:ProxyPort xmi:id="_JIW50KkxEe-mQ6Jyw3Zeww" base_Port="_JIQzMKkxEe-mQ6Jyw3Zeww"/>
+  <Blocks:Block xmi:id="_VcBOYKkyEe-mQ6Jyw3Zeww" base_Class="_Vb55oKkyEe-mQ6Jyw3Zeww"/>
+  <Blocks:NestedConnectorEnd xmi:id="_zoLD8qkyEe-mQ6Jyw3Zeww" base_Element="_zoLD8KkyEe-mQ6Jyw3Zeww" propertyPath="_Q5mWcqkOEe-JnuutqrYD_A" base_ConnectorEnd="_zoLD8KkyEe-mQ6Jyw3Zeww"/>
+  <Blocks:NestedConnectorEnd xmi:id="_zoM5IKkyEe-mQ6Jyw3Zeww" base_Element="_zoLD8akyEe-mQ6Jyw3Zeww" propertyPath="_xDHtQKkyEe-mQ6Jyw3Zeww" base_ConnectorEnd="_zoLD8akyEe-mQ6Jyw3Zeww"/>
+  <Blocks:Block xmi:id="_Ks8AEKkzEe-mQ6Jyw3Zeww" base_Class="_Ks7ZAKkzEe-mQ6Jyw3Zeww"/>
+  <PortsAndFlows:ProxyPort xmi:id="_Ks9OMKkzEe-mQ6Jyw3Zeww" base_Port="_Ks7ZAakzEe-mQ6Jyw3Zeww"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_buSoQKkzEe-mQ6Jyw3Zeww" base_Class="_buPk8KkzEe-mQ6Jyw3Zeww"/>
+  <PortsAndFlows:ProxyPort xmi:id="_jhiiIKkzEe-mQ6Jyw3Zeww" base_Port="_jhgF4KkzEe-mQ6Jyw3Zeww"/>
+  <PortsAndFlows:InterfaceBlock xmi:id="_H5y8sKl4Ee-mQ6Jyw3Zeww" base_Class="_H5vSUKl4Ee-mQ6Jyw3Zeww"/>
+  <PortsAndFlows:ProxyPort xmi:id="_P4_A0Kl4Ee-mQ6Jyw3Zeww" base_Port="_P48kkKl4Ee-mQ6Jyw3Zeww"/>
+  <PortsAndFlows:ProxyPort xmi:id="_nPLrMKl4Ee-mQ6Jyw3Zeww" base_Port="_nPJO8Kl4Ee-mQ6Jyw3Zeww"/>
+  <PortsAndFlows:ProxyPort xmi:id="_rCBDoKl4Ee-mQ6Jyw3Zeww" base_Port="_rB9ZQKl4Ee-mQ6Jyw3Zeww"/>
+  <Blocks:Block xmi:id="_j3HGsKl5Ee-g3fenb6tqyA" base_Class="_j2ro4Kl5Ee-g3fenb6tqyA"/>
+  <Blocks:Block xmi:id="_kKxpkKl5Ee-g3fenb6tqyA" base_Class="_kKn4kKl5Ee-g3fenb6tqyA"/>
+  <Blocks:Block xmi:id="_kaYy4Kl5Ee-g3fenb6tqyA" base_Class="_kaSFMKl5Ee-g3fenb6tqyA"/>
+  <Blocks:Block xmi:id="_xMNfkKl5Ee-g3fenb6tqyA" base_Class="_xMJ1MKl5Ee-g3fenb6tqyA"/>
+  <PortsAndFlows:FlowProperty xmi:id="_eRJuUKl6Ee-g3fenb6tqyA" base_Property="_eRIgMKl6Ee-g3fenb6tqyA" direction="in"/>
+  <PortsAndFlows:FlowProperty xmi:id="_ejWRkal6Ee-g3fenb6tqyA" base_Property="_ejWRkKl6Ee-g3fenb6tqyA" direction="in"/>
+  <PortsAndFlows:FlowProperty xmi:id="_oapG0Kl6Ee-g3fenb6tqyA" base_Property="_oan4sKl6Ee-g3fenb6tqyA" direction="in"/>
+  <standard:Refine xmi:id="_674zYKpJEe-pk5ikTPT5uQ" base_Abstraction="_671wEKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_7DCkQKpJEe-pk5ikTPT5uQ" base_Abstraction="_7DBWIKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_7HoJUKpJEe-pk5ikTPT5uQ" base_Abstraction="_7HniQKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_7Oe_QKpJEe-pk5ikTPT5uQ" base_Abstraction="_7OdxIKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_70hEgKpJEe-pk5ikTPT5uQ" base_Abstraction="_70gdcKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_9rOHcKpJEe-pk5ikTPT5uQ" base_Abstraction="_9rM5UKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_9vgxkKpJEe-pk5ikTPT5uQ" base_Abstraction="_9vfjcKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_97IywKpJEe-pk5ikTPT5uQ" base_Abstraction="_97ILsKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_-AoWwKpJEe-pk5ikTPT5uQ" base_Abstraction="_-AnvsKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_-a20oKpJEe-pk5ikTPT5uQ" base_Abstraction="_-a2NkKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="__0QQgKpJEe-pk5ikTPT5uQ" base_Abstraction="__0PpcKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="__7_QMKpJEe-pk5ikTPT5uQ" base_Abstraction="__7-pIKpJEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_ACI7gKpKEe-pk5ikTPT5uQ" base_Abstraction="_ACIUcKpKEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_BJCSIKpKEe-pk5ikTPT5uQ" base_Abstraction="_BJBrEKpKEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_BNVjUKpKEe-pk5ikTPT5uQ" base_Abstraction="_BNU8QKpKEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_BePGEKpKEe-pk5ikTPT5uQ" base_Abstraction="_BeOfAKpKEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_BksTYKpKEe-pk5ikTPT5uQ" base_Abstraction="_BkrsUKpKEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_CSTnUKpKEe-pk5ikTPT5uQ" base_Abstraction="_CSSZMKpKEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_DokPoKpKEe-pk5ikTPT5uQ" base_Abstraction="_DojokKpKEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_Du46EKpKEe-pk5ikTPT5uQ" base_Abstraction="_Du4TAKpKEe-pk5ikTPT5uQ"/>
+  <standard:Refine xmi:id="_D0J0kKpKEe-pk5ikTPT5uQ" base_Abstraction="_D0JNgKpKEe-pk5ikTPT5uQ"/>
+</xmi:XMI>

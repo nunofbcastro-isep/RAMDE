@@ -1,0 +1,13 @@
+@startuml
+
+	title "Light 2 Moore"
+
+	state "Light Off" as LightOffState : output "Off"
+	state "Light On" as LightOnState : output "On"
+
+	[*] --> LightOffState
+	LightOffState --> LightOnState : event "On"
+	LightOnState --> LightOnState : event "On"
+	LightOnState --> LightOffState : event "Off"
+
+@enduml

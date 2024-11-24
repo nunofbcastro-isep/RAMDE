@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pt.ipp.isep.mescc.ramde.statemachinemealy:MealyStateMachine
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:pt.ipp.isep.mescc.ramde.statemachinemealy="https://www.isep.ipp.pt/stateMachineMealy"
+    name="Light 1 Mealy">
+  <State name="Light Off"
+      Outgoing="//@Transation.1"
+      Incoming="//@Transation.5 //@Transation.0 //@Transation.7 //@Transation.6"/>
+  <State name="Light On - Dimmed"
+      Outgoing="//@Transation.5 //@Transation.2"
+      Incoming="//@Transation.4 //@Transation.1"/>
+  <State name="Light On - Medium"
+      Outgoing="//@Transation.3 //@Transation.6"
+      Incoming="//@Transation.2"/>
+  <State name="Light On - Bright"
+      Outgoing="//@Transation.4 //@Transation.7"
+      Incoming="//@Transation.3"/>
+  <Event name="Off"/>
+  <Event name="On "/>
+  <Transation
+      outputAction=""
+      Source="//@Initial"
+      Target="//@State.0"/>
+  <Transation
+      outputAction="Dimmed"
+      Source="//@State.0"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Transation
+      outputAction="Medium"
+      Source="//@State.1"
+      Target="//@State.2"
+      Event="//@Event.1"/>
+  <Transation
+      outputAction="Bright"
+      Source="//@State.2"
+      Target="//@State.3"
+      Event="//@Event.1"/>
+  <Transation
+      outputAction="Dimmed"
+      Source="//@State.3"
+      Target="//@State.1"
+      Event="//@Event.1"/>
+  <Transation
+      outputAction="Off"
+      Source="//@State.1"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      outputAction="Off"
+      Source="//@State.2"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Transation
+      outputAction="Off"
+      Source="//@State.3"
+      Target="//@State.0"
+      Event="//@Event.0"/>
+  <Initial name="Initial"
+      Outgoing="//@Transation.0"/>
+</pt.ipp.isep.mescc.ramde.statemachinemealy:MealyStateMachine>

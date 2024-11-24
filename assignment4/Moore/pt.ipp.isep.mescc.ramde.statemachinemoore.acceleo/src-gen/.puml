@@ -1,0 +1,11 @@
+@startuml
+
+title ""
+
+state "Light Off" as  : output ""
+state "Light On - Dimmed" as  : output ""
+state "Light On - Medium" as  : output ""
+state "Light On - Bright" as  : output ""
+
+[*] -->  : event ""
+ -->  : event "

@@ -1,0 +1,14 @@
+@startuml
+
+	title "Turnstile Mealy"
+
+	state "Locked" as LockedState
+	state "Un-Locked" as UnLockedState
+
+	[*] --> UnLockedState
+	LockedState --> UnLockedState : event "Coin" / output "Un-Locked"
+	LockedState --> LockedState : event "Push" / output "Locked"
+	UnLockedState --> LockedState : event "Push" / output "Locked"
+	UnLockedState --> UnLockedState : event "Coin" / output "Un-Locked"
+
+@enduml

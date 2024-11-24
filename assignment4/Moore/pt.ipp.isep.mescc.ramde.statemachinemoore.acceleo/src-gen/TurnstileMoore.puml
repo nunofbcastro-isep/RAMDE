@@ -1,0 +1,14 @@
+@startuml
+
+	title "Turnstile Moore"
+
+	state "Locked" as LockedState : output "Locked"
+	state "Un-Locked" as UnLockedState : output "Un-Locked"
+
+	[*] --> UnLockedState
+	LockedState --> UnLockedState : event "Coin"
+	LockedState --> LockedState : event "Push"
+	UnLockedState --> LockedState : event "Coin"
+	UnLockedState --> UnLockedState : event "Coin"
+
+@enduml

@@ -1,0 +1,26 @@
+[comment encoding = UTF-8 /]
+[module generatePlantUML('https://www.isep.ipp.pt/stateMachineMoore')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemoore::acceleo::files::query /]
+
+[template public generatePlantUML(aMooreStateMachine : MooreStateMachine)]
+[file (aMooreStateMachine.projectName()+'.puml', false, 'UTF-8')]
+@startuml
+
+	title "[aMooreStateMachine.name/]"
+
+[for (s: State | aMooreStateMachine.State)]
+	state "[s.name.trim()/]" as [s.stateVariavelName()/] : output "[s.outputAction.trim()/]"
+[/for]
+
+[for (trans: Transation | aMooreStateMachine.Transation)]
+[if (trans.Source.oclIsTypeOf(Initial))]
+	['[*]'/] --> [trans.Target.stateVariavelName()/]
+[else]
+	[trans.Source.stateVariavelName()/] --> [trans.Target.stateVariavelName()/] : event "[trans.Event.name.trim()/]"
+[/if]
+[/for]
+
+@enduml
+[/file]
+[/template]

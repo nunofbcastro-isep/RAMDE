@@ -1,0 +1,22 @@
+[comment encoding = UTF-8 /]
+[module generateJavaEvent('https://www.isep.ipp.pt/stateMachineMealy')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::files::query /]
+
+[template public generateJavaEvent(anEvent : Event, folder: String)]
+[file (folder+'/'+anEvent.eventFileName(), false, 'UTF-8')]
+package org.jeasy.states.[folder/];
+
+import org.jeasy.states.api.AbstractEvent;
+
+public class [anEvent.eventClassName()/] extends AbstractEvent {
+    public [anEvent.eventClassName()/]() {
+        super("[anEvent.name/]");
+    }
+
+    protected [anEvent.eventClassName()/](String name) {
+        super(name);
+    }
+}
+[/file]
+[/template]

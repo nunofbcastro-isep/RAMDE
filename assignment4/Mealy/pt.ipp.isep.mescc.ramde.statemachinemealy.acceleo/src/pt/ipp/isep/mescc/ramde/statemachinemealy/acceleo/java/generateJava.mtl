@@ -1,0 +1,21 @@
+[comment encoding = UTF-8 /]
+[module generateJava('https://www.isep.ipp.pt/stateMachineMealy')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::java::generateJavaEvent /]
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::java::generateJavaMain /]
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::java::generateJavaHandler /]
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::files::query /]
+
+[template public generateJava(aMealyStateMachine : MealyStateMachine)]
+[let folder: String = aMealyStateMachine.projectName()]
+[for (e: Event | aMealyStateMachine.Event)]
+		[generateJavaEvent(e, folder)/]
+[/for]
+
+[for (t: Transation | aMealyStateMachine.Transation->select(t | not t.Source.oclIsTypeOf(Initial)))]
+		[generateJavaHandler(t, folder)/]
+[/for]
+	
+[generateJavaMain(aMealyStateMachine, folder)/]
+[/let]
+[/template]

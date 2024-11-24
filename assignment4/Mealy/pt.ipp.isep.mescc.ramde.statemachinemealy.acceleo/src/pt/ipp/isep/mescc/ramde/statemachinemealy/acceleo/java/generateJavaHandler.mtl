@@ -1,0 +1,21 @@
+[comment encoding = UTF-8 /]
+[module generateJavaHandler('https://www.isep.ipp.pt/stateMachineMealy')]
+
+[import pt::ipp::isep::mescc::ramde::statemachinemealy::acceleo::files::query /]
+
+[template public generateJavaHandler(aTransation : Transation, folder: String)]
+[file (folder+'/'+aTransation.handlerFileName(), false, 'UTF-8')]
+package org.jeasy.states.[folder/];
+
+import org.jeasy.states.api.EventHandler;
+
+import java.util.Date;
+
+public class [aTransation.handlerClassName()/] implements EventHandler<[aTransation.Event.eventClassName()/]> {
+    public void handleEvent([aTransation.Event.eventClassName()/] event) {
+        System.out.println("Notified about event '" + event.getName() + "' triggered at " + new Date(event.getTimestamp()));
+        System.out.println("[aTransation.outputAction/]..");
+    }
+}
+[/file]
+[/template]
